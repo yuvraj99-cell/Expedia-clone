@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #141d38;
+}
+#mainContent {
+  padding: 20px 80px;
+  background-color: rgb(245, 240, 234);
+  display: flex;
+  gap: 50px;
+}
+input {
+  padding: 10px;
+}
+#filters > * {
+  margin-top: 10px;
+}
+#filters {
+  width: 150px;
+  /* border-right: 1px solid black; */
+}
+#para-sort {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+#sortBar {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#para {
+  align-items: center;
+
+  font-size: 12px;
+}
+#bar {
+}
+#appendHere {
+  width: 100%;
+}
+.flight-logo {
+  width: 16px;
+  display: inline;
+  margin-right: 5px;
+}
+#appendHere > div {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+}
+#flight-card {
+  background-color: white;
+  line-height: 1.8;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+#flight-card:hover {
+  border: 1px solid grey;
+}
+#flight-card:focus-visible {
+  border: 1px solid grey;
+}
+.logo-text {
+  display: flex;
+}
+.time {
+  font-weight: 700;
+}
+.price-div {
+  text-align: center;
+}
+
+#modal {
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  width: 450px;
+  background-color: white;
+  height: 100%;
+
+  animation-name: swipe;
+  animation-duration: 500ms;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+#modal > div {
+  padding: 0 10px;
+}
+#closeBtn {
+  border-bottom: 1px solid black;
+  padding: 0 0 10px 0;
+}
+#fromTo {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+#time {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+@-webkit-keyframes swipe {
+  from {
+    margin-right: -500px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+#priceDiv {
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 10px;
+}
+#priceDiv > button {
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(35, 86, 240);
+  padding: 15px 30px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+}
+#heading3 {
+  margin: 20px 0;
+}
+#close {
+  color: rgb(35, 86, 240);
+  cursor: pointer;
+  margin: 10px 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 18px;
+}
+#close > i:hover {
+  color: green;
+}
+#close > i {
+  color: rgb(35, 86, 240);
+}
+@media only screen and (max-width: 1200px) {
+  #banner {
+    display: none;
+  }
+  #mainContent {
+    padding: 20px 20px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #filters {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #bar {
+    display: none;
+  }
+  #modal {
+    width: 100vw;
+  }
+}

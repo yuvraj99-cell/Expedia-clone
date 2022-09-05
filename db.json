@@ -1,0 +1,164 @@
+{
+  "flights": [
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 13, 2021",
+      "time": "7:03 AM",
+      "price": 7333,
+      "airlines": "Vistara",
+      "duration": 1.8,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/UK_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 13, 2021",
+      "time": "5:16 PM",
+      "price": 11524,
+      "airlines": "Indigo",
+      "duration": 2.4,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/6E_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 13, 2021",
+      "time": "9:03 PM",
+      "price": 7206,
+      "airlines": "Spice Jet",
+      "duration": 2,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/SG_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 13, 2021",
+      "time": "10:32 PM",
+      "price": 5825,
+      "airlines": "Go First",
+      "duration": 2.8,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/G8_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 14, 2021",
+      "time": "9:40 PM",
+      "price": 5891,
+      "airlines": "Vistara",
+      "duration": 1.9,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/UK_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 13, 2021",
+      "time": "1:38 PM",
+      "price": 5221,
+      "airlines": "Indigo",
+      "duration": 1.8,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/6E_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 13, 2021",
+      "time": "1:48 PM",
+      "price": 10886,
+      "airlines": "Spice Jet",
+      "duration": 2.1,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/SG_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 13, 2021",
+      "time": "6:16 PM",
+      "price": 7922,
+      "airlines": "Go First",
+      "duration": 1.2,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/G8_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 15, 2021",
+      "time": "9:36 PM",
+      "price": 10520,
+      "airlines": "Vistara",
+      "duration": 2,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/UK_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 14, 2021",
+      "time": "9:53 PM",
+      "price": 8947,
+      "airlines": "Indigo",
+      "duration": 2.8,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/6E_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 14, 2021",
+      "time": "2:21 PM",
+      "price": 10501,
+      "airlines": "Spice Jet",
+      "duration": 2.6,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/SG_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 14, 2021",
+      "time": "2:09 PM",
+      "price": 8239,
+      "airlines": "Go First",
+      "duration": 2.4,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/G8_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 14, 2021",
+      "time": "1:27 PM",
+      "price": 8545,
+      "airlines": "Vistara",
+      "duration": 1.9,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/UK_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 15, 2021",
+      "time": "5:02 PM",
+      "price": 7240,
+      "airlines": "Indigo",
+      "duration": 2.6,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/6E_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 14, 2021",
+      "time": "1:10 PM",
+      "price": 8484,
+      "airlines": "Spice Jet",
+      "duration": 3,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/SG_sq.svg"
+    },
+    {
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "Sep 15, 2021",
+      "time": "6:19 PM",
+      "price": 11825,
+      "airlines": "Go First",
+      "duration": 2.1,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/G8_sq.svg"
+    }
+  ]
+}
