@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./navbar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="navbar">
+        <div id="nav-1">
+       <div>
+        <img src="https://www.expedia.com/_dms/header/logo.svg" alt=""> 
+    </div>
+        <div>
+
+
+         <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"> More Travel <i class="fa-solid fa-angle-down"></i>
+
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a  href="#">Stays</a>
+                <a  href="#">Flight</a>
+                <a  href="#">Car</a>
+                <a  href="#">Packages</a>
+                <a  href="#">Holiday Activites</a>
+                <a  href="#">Deals</a>
+                <a  href="#">Group & meetings</a>
+                <a  href="#">Mobile</a>
+            </div>
+          </div>
+
+        
+
+        
+    </div>
+        </div>
+        <div id="right">
+            <a href="#"><div class="link">English</div></a>
+            <a href="#"><div class="link">Support</div></a>
+            <a href="#"><div class="link">Trips</div></a>
+            <a href="#"><div class="link"><i class="fa-solid fa-bell"></i></div></a>
+            <a href="./SignIn/index.html"
+              ><div class="link" id="username"><i class="fa-solid fa-user"></i></div></a
+            >
+        </div>
+      
+    </div>
+    <hr>
+   
+</body>
+<script>
+   /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>
