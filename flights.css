@@ -30,7 +30,7 @@ input {
 }
 #sortBar {
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px;
 }
 
@@ -39,8 +39,7 @@ input {
 
   font-size: 12px;
 }
-#bar {
-}
+
 #appendHere {
   width: 100%;
 }
@@ -71,12 +70,25 @@ input {
 }
 .logo-text {
   display: flex;
+  font-size: 14px;
 }
 .time {
   font-weight: 700;
 }
 .price-div {
   text-align: center;
+}
+.price-div > h2 {
+  font-size: 20px;
+}
+.price-div > p {
+  font-size: 12px;
+}
+.fromTo {
+  font-size: 14px;
+}
+.duration {
+  font-size: 12px;
 }
 
 #modal {
@@ -97,22 +109,33 @@ input {
   padding: 0 10px;
 }
 #closeBtn {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   padding: 0 0 10px 0;
 }
 #fromTo {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 #time {
   font-size: 14px;
   font-weight: 500;
-  padding-bottom: 30px;
-  border-bottom: 1px solid black;
+
+  border-bottom: 1px solid grey;
+}
+#time > p:last-child {
+  margin-bottom: 30px;
+}
+.smallText {
+  font-size: 12px;
+}
+#fromTo > p {
+  display: flex;
+  align-items: center;
 }
 
-@-webkit-keyframes swipe {
+@keyframes swipe {
   from {
     margin-right: -500px;
   }
@@ -121,7 +144,7 @@ input {
   }
 }
 #priceDiv {
-  border: 1px solid black;
+  border: 1px solid grey;
   padding: 15px;
   border-radius: 10px;
 }
@@ -146,6 +169,9 @@ input {
   border: 0;
   background-color: transparent;
   font-size: 18px;
+}
+#closeBtn {
+  border-bottom: 1px solid grey;
 }
 #close > i:hover {
   color: green;
