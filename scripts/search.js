@@ -1,6 +1,9 @@
-document.querySelector('form').addEventListener('submit', getFlights);
+document.querySelector('#srcBtn').addEventListener('click', getFlights);
 
 async function getFlights(event) {
+  document.getElementById('mainContent').style.display = 'flex';
+  document.getElementById('bg-img-container2').style.display = 'none';
+  document.getElementById('bg-img-container').style.display = 'none';
   event.preventDefault();
 
   let from = document.getElementById('from').value;
@@ -14,7 +17,8 @@ async function getFlights(event) {
     );
     const res2 = await res.json();
     console.log(res2);
-    displayFlights(filter(res2));
+
+    displayFlights(res2);
   } catch (err) {
     console.log(err);
   }
@@ -73,29 +77,29 @@ function closeModal() {
   document.getElementById('modal').remove();
 }
 
-function filter(res) {
-  let arr = [];
-  let count = 0;
-  const chkbox = document.querySelectorAll('.chk');
-  chkbox.forEach((ele) => {
-    ele.addEventListener('click', function () {
-      chkbox.forEach((ele) => {
-        if (ele.checked) {
-          let res3 = res.filter((elem) => {
-            return elem.airlines == ele.value;
-          });
-          arr = [...res3];
+// function filter(res) {
+//   let arr = [];
+//   let count = 0;
+//   const chkbox = document.querySelectorAll('.chk');
+//   chkbox.forEach((ele) => {
+//     ele.addEventListener('click', function () {
+//       chkbox.forEach((ele) => {
+//         if (ele.checked) {
+//           let res3 = res.filter((elem) => {
+//             return elem.airlines == ele.value;
+//           });
+//           arr = [...res3];
 
-          count++;
-        }
-      });
-    });
-    if (count === 0) {
-      return res;
-    } else {
-      return arr;
-    }
-  });
+//           count++;
+//         }
+//       });
+//     });
+//     if (count === 0) {
+//       return res;
+//     } else {
+//       return arr;
+//     }
+//   });
 
-  return newArr;
-}
+//   return newArr;
+// }

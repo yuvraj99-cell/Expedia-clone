@@ -2,33 +2,32 @@
 <html lang="en">
 
 <head>
- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXPEDIA-Flights-Return</title>
-    
-    <link rel="stylesheet" href="./styles/landing.css">
-    
-    <link rel="stylesheet" href="./styles/flights.css">
-   
-    <link rel="stylesheet" href="./styles/search.css">
+    <title>EXPEDIA-Flights-MultiCity</title>
+    <link rel="stylesheet" href="../Landingpage/navbar.css">
+    <link rel="stylesheet" href="../Landingpage/landing.css">
+    <link rel="stylesheet" href="../Landingpage/popUp.css">
+    <link rel="stylesheet" href="../Landingpage/navrespons.css">
+    <link rel="stylesheet" href="Multicity.css">
 
     <script src="https://kit.fontawesome.com/e488acc005.js" crossorigin="anonymous"></script>
-    <style>     
+    <style>    
     </style>
 </head>
 
 <body>
-   
+    
 
 
 
 
     <!-- /* Top SEction START !*/ -->
     <div id="input_box">
-        <div id="border-div">
         <div class="page">
             <button id="sty">Stays</button>
             <button id="flit">Flight</button>
@@ -53,25 +52,47 @@
                 </div>
             </div>
         </div>
-        <div class="input_button">
-            <div id="location1"><i class="fa-solid fa-location-dot"></i></div>
-            <input id="from" class="fbutton1" type="text" placeholder="Leaving From"></input>
 
-            <button id="exchange"><i class="fa-solid fa-exchange"></i></button>
+
+        <div id="f1">
+            <h4>Flight 1</h4>
+        </div>
+        <div class="input_button">
+
+            <div id="location1"><i class="fa-solid fa-location-dot"></i></div>
+            <input class="fbutton1" type="text" placeholder="Leaving From"></input>
 
             <div id="location2"><i class="fa-solid fa-location-dot"></i></div>
-            <input id="to" class="fbutton2" type="text" placeholder="Going To"></input>
+            <input class="fbutton2" type="text" placeholder="Going To"></input>
 
             <div id="departing"><i class="fa-solid fa-calendar-day"></i></div>
             <input class="fbutton3" onfocus="(this.type='date')" onblur="(this.type='text')"
                 placeholder="Departing"></input>
 
-            <div id="returning"><i class="fa-solid fa-calendar-day"></i></div>
-            <input class="fbutton4" onfocus="(this.type='date')" onblur="(this.type='text')"
-                placeholder="Returning"></input>
         </div>
+
+        <div id="f2">
+            <h4>Flight 2</h4>
+        </div>
+        <div class="input_button">
+
+            <div id="location1"><i class="fa-solid fa-location-dot"></i></div>
+            <input class="fbutton1" type="text" placeholder="Leaving From"></input>
+
+            <div id="location2"><i class="fa-solid fa-location-dot"></i></div>
+            <input class="fbutton2" type="text" placeholder="Going To"></input>
+
+            <div id="departing"><i class="fa-solid fa-calendar-day"></i></div>
+            <input class="fbutton3" onfocus="(this.type='date')" onblur="(this.type='text')"
+                placeholder="Departing"></input>
+
+        </div>
+
+        <div id="addanother">
+            <h4><i class="fa-solid fa-add"></i>&ensp;Add Another Flight</h4>
+        </div>
+
         <button id="srcBtn">Search</button>
-    </div>
         <!-- /* Top SEction End !*/ -->
 
         <!-- ***************************************************************** -->
@@ -198,55 +219,6 @@
             </div>
 
         </div>
-
-        <!-- search div -->
-        <div id="mainContent">
-            <div id="filters">
-              <h3>Filter by</h3>
-              <h4>Airlines</h4>
-              <div>
-                <input type="checkbox" class="chk" value="Indigo" />
-                <label>IndiGo</label>
-              </div>
-              <div>
-                <input type="checkbox" class="chk" value="Vistara" />
-                <label>Vistara</label>
-              </div>
-              <div>
-                <input type="checkbox" class="chk" value="Spice Jet" />
-                <label>Spice Jet</label>
-              </div>
-              <div>
-                <input type="checkbox" class="chk" value="Go First" />
-                <label>Go First</label>
-              </div>
-            </div>
-            <div id="flights">
-              <div id="para-sort">
-                <div id="para">
-                  <p>
-                    Prices displayed include taxes and may change based on
-                    availability. You can review any additional fees before checkout.
-                    Prices are not final until you complete your purchase.
-                  </p>
-                </div>
-                <div id="bar">
-                  <select id="sortBar">
-                    <option value="">Sort By</option>
-                    <option value="LH">Price(Lowest)</option>
-                    <option value="HL">Price(Higest)</option>
-                  </select>
-                </div>
-              </div>
-              <div id="appendHere"></div>
-            </div>
-            <div id="banner">
-              <img
-                src="https://tpc.googlesyndication.com/simgad/17447823249981941085?"
-                alt=""
-              />
-            </div>
-          </div>
         <!-- Mid Section END! -->
 
         <!-- ***************************************************************** -->
@@ -309,22 +281,28 @@
                 Ltd. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of
                 Expedia, Inc.</p>
         </div>
-        
+        <!-- /*   LAST SECTION END */ -->
 
 
-     
+       
+
+
+
+       
+
 
 
 </body>
 
 </html>
-<script src="../Landingpage/pop.js"></script>
-<script src="./scripts/search.js"></script>
+
 <script>
     document.querySelector("#sty").addEventListener("click",function(){
-    window.location.href="../landingpage/landing.html"
+    window.location.href="../Landingpage/landing.html"
 })
-
+document.querySelector("#flit").addEventListener("click",function(){
+    window.location.href="flights.html"
+})
 
 
 </script>
