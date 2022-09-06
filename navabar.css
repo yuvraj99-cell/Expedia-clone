@@ -1,0 +1,28 @@
+body{
+    border-bottom: 0.1px solid gray;
+    margin: 2px;
+    padding: 2px;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+#navBar-Sectn{
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: normal;
+}
+#company{
+    border: 1px solid crimson;
+}
+
+#s1{
+    border: 1px solid orange;
+}
+
+#s2{
+    border: 1px solid green;
+}
