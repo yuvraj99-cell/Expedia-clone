@@ -77,7 +77,7 @@ function filter(res) {
   let arr = [];
   let count = 0;
   const chkbox = document.querySelectorAll('.chk');
-  const newArr = chkbox.forEach((ele) => {
+  chkbox.forEach((ele) => {
     ele.addEventListener('click', function () {
       chkbox.forEach((ele) => {
         if (ele.checked) {
