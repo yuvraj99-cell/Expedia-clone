@@ -1,0 +1,190 @@
+.page>button:nth-child(2) {
+    border-bottom: 2px solid #3662D8;
+    color: #3662D8;
+}
+
+.select_button {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.select_button>div {
+    display: flex;
+    gap: 5px;
+}
+
+.select_button>div:first-child>div {
+    padding: 12px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.select_button>div:first-child>div>a {
+    color: black;
+    text-decoration: none;
+}
+
+.select_button>div:first-child>div:first-child {
+    background-color: #e0e7f7;
+}
+
+.select_button>div:first-child>div:first-child>a {
+    text-decoration: none;
+    color: #3662D8;
+}
+
+.select_button>div:first-child>div:hover {
+    background-color: #e0e7f7;
+}
+
+.select_button>div:first-child>div>a:hover {
+    color: #3662D8;
+}
+
+.select_button>div:last-child>div {
+    padding: 12px 15px;
+    cursor: pointer;
+    color: #3662D8;
+}
+
+.select_button>div:last-child>div>h4 {
+    font-weight: 500;
+}
+
+.select_button>div:last-child>div>h4:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------flights input part--------------------------- */
+
+.input_button {
+    /* border: 1px solid black;  */
+    display: flex;
+    width: 90%;
+    position: relative;
+    margin: auto;
+}
+
+#location1 {
+    position: absolute;
+    left: 0.5%;
+    top: 10px;
+    /* font-size: 13px; */
+    /* padding: 1.6px; */
+    display: flex;
+    align-items: center;
+    color: rgb(32, 30, 30);
+}
+
+#location2 {
+    position: absolute;
+    left: 36.5%;
+    top: 10px;
+    /* font-size: 13px; */
+    /* padding: 1.6px; */
+    display: flex;
+    align-items: center;
+    color: rgb(32, 30, 30);
+}
+
+#exchange {
+    margin: 10px -1px;
+    padding: 0 2px;
+    border-radius: 10px;
+}
+
+#departing {
+    position: absolute;
+    left: 70%;
+    top: 10px;
+    /* font-size: 13px; */
+    /* padding: 1.6px; */
+    display: flex;
+    align-items: center;
+    color: rgb(32, 30, 30);
+}
+
+#returning {
+    position: absolute;
+    left: 84%;
+    top: 10px;
+}
+
+.input_button>.fbutton1 {
+    padding: 10.2px 21px;
+    width: 30%;
+    border: 1.5px solid #727483;
+    border-radius: 8px;
+}
+
+.input_button>.fbutton2 {
+    padding: 10.2px 21px;
+    width: 30%;
+    border: 1.5px solid #727483;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.input_button>.fbutton3 {
+    padding: 10.2px 21px;
+    width: 9.5%;
+    border: 1.5px solid #727483;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.input_button>.fbutton4 {
+    padding: 10.2px 21px;
+    width: 9.5%;
+    border: 1.5px solid #727483;
+    border-radius: 8px;
+}
+
+#srcBtn {
+    display: block;
+    margin: auto;
+    padding: 14px 60px;
+    margin-top: 40px;
+    background-color: #3662D8;
+    border-radius: 7px;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#srcBtn:hover {
+    cursor: pointer;
+    background-color: #1f419c;
+}
+.down_btns > select, .down_btns > input,.down_btns > button{
+    height: 45px;
+    width: 140px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid black;
+    padding-left: 10px;
+    margin-left: 30px;
+    font-size: 15px;
+  }
+  .down_btns > input{
+    height: 43px;
+    margin-left: 10px;
+  }
+  .down_btns > button{
+    margin-left: 10px;
+    background-color: rgb(73, 73, 238);
+    color: white;
+    font-weight: 600;
+    border: none;
+  }
