@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://kit.fontawesome.com/b678f324bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./flights.css" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="from" />
+      <input type="text" id="to" />
+      <input type="date" />
+      <input type="submit" value="SUBMIT" />
+    </form>
+
+    <div id="mainContent">
+      <div id="filters">
+        <h3>Filter by</h3>
+        <h4>Airlines</h4>
+        <div><input type="checkbox" id="indigo" /> <label>IndiGo</label></div>
+        <div><input type="checkbox" id="vistara" /> <label>Vistara</label></div>
+        <div><input type="checkbox" id="spice" /> <label>Spice Jet</label></div>
+        <div><input type="checkbox" id="go" /> <label>Go First</label></div>
+      </div>
+      <div id="flights">
+        <div id="para-sort">
+          <div id="para">
+            <p>
+              Prices displayed include taxes and may change based on
+              availability. You can review any additional fees before checkout.
+              Prices are not final until you complete your purchase.
+            </p>
+          </div>
+          <div id="bar">
+            <select id="sortBar">
+              <option value="">Sort By</option>
+              <option value="LH">Price(Lowest)</option>
+              <option value="HL">Price(Higest)</option>
+            </select>
+          </div>
+        </div>
+        <div id="appendHere"></div>
+      </div>
+      <div id="banner">
+        <img
+          src="https://tpc.googlesyndication.com/simgad/17447823249981941085?"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./flights.js"></script>
