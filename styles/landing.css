@@ -22,6 +22,7 @@
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 650;
   color: #343b53;
+  border-bottom: 2px solid transparent;
 }
 #sty:focus {
   border-bottom: 2px solid #3662d8;
@@ -535,6 +536,17 @@ h3 {
   margin: auto;
   /* border: 1px solid black; */
   margin-bottom: 51px;
+}
+
+@media only screen and (max-width: 600px) {
+  #cmpny-info {
+    display: flex;
+    flex-direction: column;
+  }
+  #input_button {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*   LAST SECTION END! */

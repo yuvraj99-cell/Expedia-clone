@@ -3,10 +3,11 @@
   color: #3662d8;
 }
 #border-div {
-  border: 1px solid grey;
-  border-radius: 10px;
   width: 90vw;
   margin: 0 auto;
+}
+#return-link:focus {
+  background-color: #3662d8;
 }
 
 .select_button {
