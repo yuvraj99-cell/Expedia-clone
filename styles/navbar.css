@@ -4,29 +4,64 @@
 }
 #navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
+  padding-bottom: 5px;
+ 
 }
-#nav-1,
+
+
 #right {
-  margin-left: 5vw;
+  margin-right:-9vw;
+  width: 35vw;
+  height: 5vh;
   display: flex;
-  justify-content: space-between;
+ text-align: center;
 }
-#nav-1 > div {
+#middle{
+  display: none;
+}
+
+/* #nav-1 > div {
   width: 12vw;
+} */
+div>img{
+  height:5.5vh;
+  width:17vh;
+  margin-left: -7.5vw;
+  margin-top: 0.2vh;
+  
 }
-.dropbtn {
-  margin-top: -12px;
+
+
+.static{
+  display: flex;
+  justify-content: space-evenly;
+  width: 13vw;
 }
-#right > a {
+#right >.static> a{
+  text-decoration: none;
+  color: rgb(91, 91, 91);
+  width:20%;
+}
+#right >.desktop-nav> a {
   text-decoration: none;
   color: rgb(91, 91, 91);
   font-size: large;
+
 }
-hr {
+.desktop-nav{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 7px;
+  width: 25vw;
+  
+ 
+}
+.line{
+ 
   padding: 0;
   margin: 0;
-  margin-top: -3vh;
+  margin-top: -2vh;
   color: rgb(103, 103, 103);
 }
 
@@ -34,14 +69,21 @@ hr {
   text-align: center;
   font-size: larger;
 }
+.drp-dwn{
+  margin-left: -22vw;
+}
 
 /* Dropdown Button */
 .dropbtn {
   background-color: white;
-  padding: 16px;
-  font-size: 16px;
+  padding:15px;
+  padding-left: 0%;
+  padding-right: 0%;
+  font-size:90%;
   border: none;
   cursor: pointer;
+  margin-top:  -1.5vh;
+  color: black;
 }
 
 /* Dropdown button on hover & focus */
@@ -85,19 +127,60 @@ hr {
 .show {
   display: block;
 }
-.link {
-  height: 3vh;
-  width: 3vw;
+.tab-nav-bag>a{
+  text-decoration: none;
+  color: rgb(91, 91, 91);
+  font-size: large;
 }
-.link1 {
-  height: 4vh;
-  width: 8.5vw;
-  margin-top: -0.7vh;
+.tab-nav-bag{
+  display: none; 
 }
-.icon {
-  margin-top: 0.5vh;
+
+
+@media(max-width:62em){
+  .desktop-nav{
+    display:none;
+    text-align: center;
+ }
+.tab-nav-bag{
+  display:flex;
+  margin-top: -0.01em;
+  margin-right: -3vw;
+  text-align: center;
 }
-.link3 {
-  width: 5vh;
-  margin-left: 3vh;
+
+#right{
+  width:30vw;
+ text-align: center;
+  
 }
+.static{
+  width: 20vw;
+}
+
+
+
+}
+
+@media(max-width:36em){
+#middle{
+  display: block;
+  margin-top: 10.5px;
+  margin-right: -0.5vw;
+  
+}
+.drp-dwn{
+  display: none;
+ 
+  
+}
+img{
+  width: 10%;
+  height: 10%;
+}
+}
+
+
+
+
+
