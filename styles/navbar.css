@@ -170,20 +170,19 @@ body{
  #right{
    width:30vw;
   text-align: center;
-  border: 1px solid purple;
   justify-content: space-evenly;
   
  }
  .static{
    width: 15vw;
    margin-left: -3vw;
-   border: 1px solid red;
+  
  }
  .static> a{
    text-decoration: none;
    color: rgb(91, 91, 91);
    width:20%;
-   border: 1px solid red;
+  
  }
  
  
