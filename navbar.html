@@ -7,32 +7,35 @@
     <title>Document</title>
 <link rel="stylesheet" href="./navbar.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
 
 </head>
 <body>
     <div id="navbar">
-        <div id="nav-1">
+       
        <div>
         <img src="https://www.expedia.com/_dms/header/logo.svg" alt=""> 
     </div>
-        <div>
+        <div class="drp-dwn">
 
 
          <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn"> More Travel <i class="fa-solid fa-angle-down"></i>
 
             </button>
+            
             <div id="myDropdown" class="dropdown-content">
-                <a  href="#">Stays</a>
-                <a  href="#">Flight</a>
-                <a  href="#">Car</a>
-                <a  href="#">Packages</a>
-                <a  href="#">Holiday Activites</a>
+                <a  href="#"><box-icon name='buildings' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Stays</a>
+                <a  href="#"><box-icon name='plane-alt' type='solid' animation='burst' color='#7f7b7c' ></box-icon> &nbsp;  Flight</a>
+                <a  href="#"><box-icon name='car' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Car</a>
+                <a  href="#"> <box-icon name='briefcase-alt' type='solid' flip='horizontal' animation='tada' color='#7f7b7c' ></box-icon> &nbsp; Packages</a>
+                <a  href="#"><box-icon name='collection' animation='burst' color='#7f7b7c' ></box-icon>&nbsp; Holiday Activites</a>
                 <a  href="#">Deals</a>
                 <a  href="#">Group & meetings</a>
                 <a  href="#">Mobile</a>
             </div>
-          </div>
+          
 
         
 
@@ -40,17 +43,21 @@
     </div>
         </div>
         <div id="right">
-            <a href="#"><div class="link">English</div></a>
-            <a href="#"><div class="link">Support</div></a>
-            <a href="#"><div class="link">Trips</div></a>
-            <a href="#"><div class="link"><i class="fa-solid fa-bell"></i></div></a>
-            <a href="./SignIn/index.html"
-              ><div class="link" id="username"><i class="fa-solid fa-user"></i></div></a
-            >
+          <div id="middle"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <div class="tab-nav-bag"><box-icon name='shopping-bag' type='solid' animation='tada' ></box-icon></div>
+          <div class="desktop-nav">
+            <a href="#"> English</a>
+            <a href="#">Support</a>
+            <a href="#">Trips</a>
+          </div>
+            <div class="static">
+            <a href="#"><box-icon name='bell-ring' type='solid' animation='tada' ></box-icon></a>
+            <a  class="acc" href="./SignIn/index.html"><i class="fa-solid fa-user fa-lg"></i></a>
         </div>
+      </div>
       
     </div>
-    <hr>
+    <hr class="line">
    
 </body>
 <script>
