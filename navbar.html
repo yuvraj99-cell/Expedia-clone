@@ -1,124 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/navbar.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-  </head>
-  <body>
-    <div id="nav-container">
+<link rel="stylesheet" href="./navbar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+
+</head>
+<body>
     <div id="navbar">
-      
-        <div>
-          <img src="https://www.expedia.com/_dms/header/logo.svg" alt="" />
-        </div>
-        <div class="drp-dwn">
-          <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">
-              More Travel <i class="fa-solid fa-angle-down"></i>
-            </button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#"
-                ><box-icon
-                  name="buildings"
-                  animation="burst"
-                  color="#7f7b7c"
-                ></box-icon>
-                &nbsp; Stays</a
-              >
-              <a href="#"
-                ><box-icon
-                  name="plane-alt"
-                  type="solid"
-                  animation="burst"
-                  color="#7f7b7c"
-                ></box-icon>
-                &nbsp; Flight</a
-              >
-              <a href="#"
-                ><box-icon
-                  name="car"
-                  animation="burst"
-                  color="#7f7b7c"
-                ></box-icon>
-                &nbsp; Car</a
-              >
-              <a href="#">
-                <box-icon
-                  name="briefcase-alt"
-                  type="solid"
-                  flip="horizontal"
-                  animation="tada"
-                  color="#7f7b7c"
-                ></box-icon>
-                &nbsp; Packages</a
-              >
-              <a href="#"
-                ><box-icon
-                  name="collection"
-                  animation="burst"
-                  color="#7f7b7c"
-                ></box-icon
-                >&nbsp; Holiday Activites</a
-              >
-              <a href="#">Deals</a>
-              <a href="#">Group & meetings</a>
-              <a href="#">Mobile</a>
-            </div>
-          </div>
-        </div>
        
-      
-     
-    
-      <div id="right">
-        <div id="middle">
-          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-        </div>
-        <div class="tab-nav-bag">
-        <a   href="#" ><i class="fa-solid fa-bag-shopping fa-lg"></i> </a >
-        </div>
-        <div class="desktop-nav">
-        <a href="#" >English </a >
-        <a href="#">Support</a>
-        <a href="#">Trips</a>
-      </div>
-      <div class="static">
-        <a href="#"><i class="fa-solid fa-bell fa-lg"></i></a> 
-        <a href="./signUp.html"><i class="fa-solid fa-user fa-lg"></i></a>
-      </div>
+       <div>
+        <img src="https://www.expedia.com/_dms/header/logo.svg" alt=""> 
     </div>
-   
+        <div class="drp-dwn">
+
+
+         <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"> More Travel <i class="fa-solid fa-angle-down"></i>
+
+            </button>
+            
+            <div id="myDropdown" class="dropdown-content">
+                <a  href="#"><box-icon name='buildings' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Stays</a>
+                <a  href="#"><box-icon name='plane-alt' type='solid' animation='burst' color='#7f7b7c' ></box-icon> &nbsp;  Flight</a>
+                <a  href="#"><box-icon name='car' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Car</a>
+                <a  href="#"> <box-icon name='briefcase-alt' type='solid' flip='horizontal' animation='tada' color='#7f7b7c' ></box-icon> &nbsp; Packages</a>
+                <a  href="#"><box-icon name='collection' animation='burst' color='#7f7b7c' ></box-icon>&nbsp; Holiday Activites</a>
+                <a  href="#">Deals</a>
+                <a  href="#">Group & meetings</a>
+                <a  href="#">Mobile</a>
+            </div>
+          
+
+        
+
+        
+    </div>
+        </div>
+        <div id="right">
+          <div id="middle"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <div class="tab-nav-bag"><box-icon name='shopping-bag' type='solid' animation='tada' ></box-icon></div>
+          <div class="desktop-nav">
+            <a href="#"> English</a>
+            <a href="#">Support</a>
+            <a href="#">Trips</a>
+          </div>
+            <div class="static">
+            <a href="#"><box-icon name='bell-ring' type='solid' animation='tada' ></box-icon></a>
+            <a  class="acc" href="./SignIn/index.html"><i class="fa-solid fa-user fa-lg"></i></a>
+        </div>
+      </div>
+      
     </div>
     <hr class="line">
-  </div>
-  </body>
-  <script>
-    /* When the user clicks on the button,
+   
+</body>
+<script>
+   /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-    function myFunction() {
-      document.getElementById('myDropdown').classList.toggle('show');
-    }
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-    // Close the dropdown menu if the user clicks outside of it
-    window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName('dropdown-content');
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
-    };
-  </script>
+    }
+  }
+}
+</script>
 </html>

@@ -17,6 +17,7 @@
   
     <script src="https://kit.fontawesome.com/e488acc005.js" crossorigin="anonymous"></script>
     <script defer src="./index.js" type="module"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </head>
 <body>
     <!-- navbar -->
@@ -292,7 +293,23 @@
     // function goToStays() {
     //     window.location.href="./index.html"
     // }
-    
+    function myFunction() {
+    document.getElementById('myDropdown').classList.toggle('show');
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName('dropdown-content');
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  };
 
 </script>
 
