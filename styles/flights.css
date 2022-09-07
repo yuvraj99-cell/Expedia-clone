@@ -1,7 +1,3 @@
-.page > button:nth-child(2) {
-  border-bottom: 2px solid #3662d8;
-  color: #3662d8;
-}
 #border-div {
   width: 90vw;
   margin: 0 auto;
@@ -94,7 +90,7 @@
 
 #location2 {
   position: absolute;
-  left: 36.5%;
+  left: 35.5%;
   top: 10px;
   /* font-size: 13px; */
   /* padding: 1.6px; */
@@ -111,7 +107,7 @@
 
 #departing {
   position: absolute;
-  left: 70%;
+  left: 69%;
   top: 10px;
   /* font-size: 13px; */
   /* padding: 1.6px; */
