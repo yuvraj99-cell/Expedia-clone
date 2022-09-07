@@ -12,7 +12,7 @@ seePass.addEventListener("click",function(){
    console.log(type)
     passIn.setAttribute("type",type)
    this.classList.toggle("fa-eye-slash")
-    // console.log("I'm in")
+   
 
 })
 
@@ -20,7 +20,7 @@ var arrow=document.querySelector("#arrow").addEventListener("click",function(){
     window.history.back();
 })
 
-// SAVING USER DETAIL///////////////////
+// SAVING USER DETAIL
 
 var signUp_data=document.querySelector("form");
 var inpt=document.querySelectorAll(".error")
