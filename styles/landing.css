@@ -1,8 +1,14 @@
-/* * {
+* {
   padding: 0px;
   margin: 0px;
-} */
-
+}
+#input_box {
+  border: 1px solid rgb(197, 197, 197);
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 50px;
+}
 .page {
   display: flex;
   justify-content: center;
@@ -92,15 +98,14 @@ hr {
 
 .input_button > .button1 {
   padding: 10.2px 21px;
-  width: 24%;
+
   border: 1.5px solid #727483;
 
-  margin-right: 8px;
   border-radius: 8px;
 }
 #member {
   display: block;
-  margin: auto;
+
   margin-bottom: 15px;
   padding: 9px;
   border-radius: 16px;
@@ -118,49 +123,50 @@ hr {
 
 .input_button > .button2 {
   padding: 10px 21px;
-  width: 15%;
+
   border: 1.5px solid #727483;
 
   display: block;
-  margin: auto;
+
   display: flex;
   border-radius: 8px;
 }
 
 .input_button > .button3 {
   padding: 10px 21px;
-  width: 15%;
+
   border: 1.5px solid #727483;
 
   display: block;
-  margin: auto;
+
   display: flex;
   border-radius: 8px;
 }
 
 .input_button > .button4 {
   padding: 10px 21px;
-  width: 25%;
+
   border: 1.5px solid #727483;
 
   display: block;
-  margin: auto;
+
   display: flex;
   border-radius: 8px;
 }
 
 .checkbox {
   display: flex;
-  width: 29%;
+
   /* border: 1px solid black; */
-  justify-content: space-around;
-  margin-top: 29px;
-  margin-left: 100px;
+  justify-content: center;
+
+  margin: 20px auto;
   padding: 2px 0px 2px 0px;
 }
 
 .checkbox > div {
   display: flex;
+  align-items: center;
 }
 .checkbox > div > input + div {
   font-family: 'Centra No2', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -169,6 +175,7 @@ hr {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.125rem;
+  width: 100px;
 }
 .checkbox > div > div {
   font-size: 14px;
@@ -185,7 +192,8 @@ input[type='checkbox'] {
 
   border-style: solid;
 }
-#srchButton {
+#srchButton,
+#srcBtn {
   display: block;
   margin: auto;
   padding: 14px 60px;
@@ -328,7 +336,6 @@ input[type='checkbox'] {
 }
 #img-cont {
   width: 38%;
-  height: 280px;
 
   overflow: hidden;
 }
@@ -543,6 +550,28 @@ h3 {
   }
   #input_button {
     display: flex;
+    flex-direction: column;
+  }
+  #Qr-logo {
+    display: none;
+  }
+  #Qr-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  #text-contQr > h1 + p + h4 {
+    display: none;
+  }
+  .down_btns {
+    display: none;
+  }
+  .down_btns + p {
+    display: none;
+  }
+  #img-cont {
+    width: 100%;
+  }
+  .input_button {
     flex-direction: column;
   }
 }

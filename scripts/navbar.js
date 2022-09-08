@@ -2,7 +2,7 @@ export const navbar = () => `
 <div id="navbar">
        
 <div>
- <img src="https://www.expedia.com/_dms/header/logo.svg" alt=""> 
+ <a href="./index.html"><img src="https://www.expedia.com/_dms/header/logo.svg" alt=""></a> 
 </div>
  <div class="drp-dwn">
 
@@ -13,8 +13,8 @@ export const navbar = () => `
      </button>
      
      <div id="myDropdown" class="dropdown-content">
-         <a  href="#"><box-icon name='buildings' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Stays</a>
-         <a  href="#"><box-icon name='plane-alt' type='solid' animation='burst' color='#7f7b7c' ></box-icon> &nbsp;  Flight</a>
+         <a  href="./hotels.html"><box-icon name='buildings' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Stays</a>
+         <a  href="./flights.html"><box-icon name='plane-alt' type='solid' animation='burst' color='#7f7b7c' ></box-icon> &nbsp;  Flight</a>
          <a  href="#"><box-icon name='car' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Car</a>
          <a  href="#"> <box-icon name='briefcase-alt' type='solid' flip='horizontal' animation='tada' color='#7f7b7c' ></box-icon> &nbsp; Packages</a>
          <a  href="#"><box-icon name='collection' animation='burst' color='#7f7b7c' ></box-icon>&nbsp; Holiday Activites</a>
@@ -39,29 +39,29 @@ export const navbar = () => `
    </div>
      <div class="static">
      <a href="#"><box-icon name='bell-ring' type='solid' animation='tada' ></box-icon></a>
-     <a  class="acc" href="./SignIn/index.html"><i class="fa-solid fa-user fa-lg"></i></a>
+     <a  class="acc" href="./signUp.html"><i class="fa-solid fa-user fa-lg"></i></a>
  </div>
 </div>
 
 </div>
 <hr class="line">
 
-`
+`;
 
 function myFunction() {
-    document.getElementById('myDropdown').classList.toggle('show');
-  }
+  document.getElementById('myDropdown').classList.toggle('show');
+}
 
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName('dropdown-content');
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName('dropdown-content');
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
     }
-  };
+  }
+};

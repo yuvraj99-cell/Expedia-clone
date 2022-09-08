@@ -14,8 +14,13 @@
     <link rel="stylesheet" href="./styles/flights.css">
    
     <link rel="stylesheet" href="./styles/search.css">
-    <link rel="stylesheet" href="./styles/Oneway.css">
-    <link rel="stylesheet" href="./styles/Multicity.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    
+   
+    <script defer src="./scripts/index.js" type="module"></script>
+    <script defer src="./scripts/index.js" type="module"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  
 
     <script src="https://kit.fontawesome.com/e488acc005.js" crossorigin="anonymous"></script>
     <style>     
@@ -23,64 +28,46 @@
 </head>
 
 <body>
+    <div id="navBar"></div>
    
 
 
 
 
     <!-- /* Top SEction START !*/ -->
-    <div id="input_box">
-        <div id="border-div">
-        <div class="page">
-            <button id="sty">Stays</button>
-            <button id="flit">Flight</button>
-            <button id="crs">Cars</button>
-            <button id="pkgs">Packages</button>
-            <button >Things To Do</button>
-        </div>
+    
+        
+        
 
-        <hr>
-        <div class="select_button">
-            <div>
-                <div id="return"><a id="return-link">Return</a></div>
-                <div id="oneWay"><a >One-way</a></div>
-                <div id="multi"><a >Multi-city</a></div>
-            </div>
-            <div>
-                <div>
-                    <h4> 1 traveller <i class="fa-solid fa-angle-down"></i></h4>
-                </div>
-                <div>
-                    <h4>Economy <i class="fa-solid fa-angle-down"></i></h4>
-                </div>
-            </div>
-        </div>
+      
+       
         <div id="append-input">
-        <div class="input_button">
-            <div id="location1"><i class="fa-solid fa-location-dot"></i></div>
-            <input id="from" class="fbutton1" type="text" placeholder="Leaving From"></input>
-
-            <button id="exchange"><i class="fa-solid fa-exchange"></i></button>
-
-            <div id="location2"><i class="fa-solid fa-location-dot"></i></div>
-            <input id="to" class="fbutton2" type="text" placeholder="Going To"></input>
-
-            <div id="departing"><i class="fa-solid fa-calendar-day"></i></div>
-            <input class="fbutton3" onfocus="(this.type='date')" onblur="(this.type='text')"
-                placeholder="Departing"></input>
-
-            <div id="returning"><i class="fa-solid fa-calendar-day"></i></div>
-            <input class="fbutton4" onfocus="(this.type='date')" onblur="(this.type='text')"
-                placeholder="Returning"></input>
+            <div id="input-heading">
+            <h1 id="page-title">Search Flights</h1>
+            <div class="input_boxes">
+                
+                <input id="from" class="fbutton1" type="text" placeholder="Leaving From"></input>
+    
+               <i id="exchange-logo" class="fa-solid fa-exchange"></i>
+    
+              
+                <input id="to" class="fbutton2" type="text" placeholder="Going To"></input>
+    
+               
+                <input class="fbutton3" onfocus="(this.type='date')" onblur="(this.type='text')"
+                    value="2022-08-09"></input>
+    
+            </div>
+            <button id="searchFlights">Search</button>
         </div>
-        <button id="srcBtn">Search</button>
     </div>
-    </div>
+   
         <!-- /* Top SEction End !*/ -->
 
         <!-- ***************************************************************** -->
 
         <!-- Mid-Section START! -->
+        
         <div id="bg-img-container">
             <div id="bg-img">
 
@@ -323,103 +310,34 @@
 
 </html>
 
-<script src="./scripts/search.js"></script>
+
 <script>
     document.querySelector("#sty").addEventListener("click",function(){
 
     window.location.href="./index.html"
 
    
+  
 
 })
-document.getElementById("oneWay").addEventListener("click",oneWay);
-document.getElementById("multi").addEventListener("click",multiCity);
-document.getElementById("return").addEventListener("click",returnCity);
-function oneWay() {
-    let div = ` <div class="input_button">
-            <div id="location1"><i class="fa-solid fa-location-dot"></i></div>
-            <input class="fbutton1" type="text" placeholder="Leaving From"></input>
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName('dropdown-content');
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  };
+function myFunction() {
+    document.getElementById('myDropdown').classList.toggle('show');
+  }
 
-            <button id="exchange"><i class="fa-solid fa-exchange"></i></button>
-
-            <div id="location2"><i class="fa-solid fa-location-dot"></i></div>
-            <input class="fbutton2" type="text" placeholder="Going To"></input>
-
-            <div id="departing"><i class="fa-solid fa-calendar-day"></i></div>
-            <input class="fbutton3" onfocus="(this.type='date')" onblur="(this.type='text')"
-                placeholder="Departing"></input>
-
-        </div>
-        <button id="srcBtn">Search</button>`;
-        document.getElementById("append-input").innerHTML=div;
-    
-}
-function  multiCity () {
-    let div = ` <div id="f1">
-            <h4>Flight 1</h4>
-        </div>
-        <div class="input_button">
-
-            <div id="location1"><i class="fa-solid fa-location-dot"></i></div>
-            <input class="fbutton1" type="text" placeholder="Leaving From"></input>
-
-            <div id="location2"><i class="fa-solid fa-location-dot"></i></div>
-            <input class="fbutton2" type="text" placeholder="Going To"></input>
-
-            <div id="departing"><i class="fa-solid fa-calendar-day"></i></div>
-            <input class="fbutton3" onfocus="(this.type='date')" onblur="(this.type='text')"
-                placeholder="Departing"></input>
-
-        </div>
-
-        <div id="f2">
-            <h4>Flight 2</h4>
-        </div>
-        <div class="input_button">
-
-            <div id="location1"><i class="fa-solid fa-location-dot"></i></div>
-            <input class="fbutton1" type="text" placeholder="Leaving From"></input>
-
-            <div id="location2"><i class="fa-solid fa-location-dot"></i></div>
-            <input class="fbutton2" type="text" placeholder="Going To"></input>
-
-            <div id="departing"><i class="fa-solid fa-calendar-day"></i></div>
-            <input class="fbutton3" onfocus="(this.type='date')" onblur="(this.type='text')"
-                placeholder="Departing"></input>
-
-        </div>
-
-        <div id="addanother">
-            <h4><i class="fa-solid fa-add"></i>&ensp;Add Another Flight</h4>
-        </div>
-
-        <button id="srcBtn">Search</button>`
-        document.getElementById("append-input").innerHTML=div;
-    
-}
-function returnCity(){
-    let div = `<div class="input_button">
-            <div id="location1"><i class="fa-solid fa-location-dot"></i></div>
-            <input id="from" class="fbutton1" type="text" placeholder="Leaving From"></input>
-
-            <button id="exchange"><i class="fa-solid fa-exchange"></i></button>
-
-            <div id="location2"><i class="fa-solid fa-location-dot"></i></div>
-            <input id="to" class="fbutton2" type="text" placeholder="Going To"></input>
-
-            <div id="departing"><i class="fa-solid fa-calendar-day"></i></div>
-            <input class="fbutton3" onfocus="(this.type='date')" onblur="(this.type='text')"
-                placeholder="Departing"></input>
-
-            <div id="returning"><i class="fa-solid fa-calendar-day"></i></div>
-            <input class="fbutton4" onfocus="(this.type='date')" onblur="(this.type='text')"
-                placeholder="Returning"></input>
-        </div>
-        <button id="srcBtn">Search</button>`
-        document.getElementById("append-input").innerHTML=div;
-
-}
 
 
 
 </script>
+<script src="./scripts/search.js"></script>

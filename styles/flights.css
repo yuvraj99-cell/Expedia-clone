@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#page-title {
+  margin-bottom: 20px;
+}
 #border-div {
   width: 90vw;
   margin: 0 auto;
@@ -72,9 +80,11 @@
 .input_button {
   /* border: 1px solid black;  */
   display: flex;
+  flex-wrap: wrap;
   width: 90%;
   position: relative;
   justify-content: center;
+  gap: 5px;
 }
 
 #location1 {
@@ -100,12 +110,11 @@
 }
 
 #exchange {
-  margin: 0 10px;
-  padding: 10px;
-  border-radius: 50%;
-  border: 0;
-}
+  align-self: center;
 
+  color: rgb(62, 62, 62);
+  cursor: pointer;
+}
 #departing {
   position: absolute;
   left: 69%;
@@ -125,25 +134,23 @@
 
 .input_button > .fbutton1 {
   padding: 10.2px 21px;
-  width: 30%;
+
   border: 1.5px solid #727483;
   border-radius: 8px;
 }
 
 .input_button > .fbutton2 {
   padding: 10.2px 21px;
-  width: 30%;
+
   border: 1.5px solid #727483;
   border-radius: 8px;
-  margin-right: 8px;
 }
 
 .input_button > .fbutton3 {
   padding: 10.2px 21px;
-  width: 9.5%;
+
   border: 1.5px solid #727483;
   border-radius: 8px;
-  margin-right: 8px;
 }
 
 .input_button > .fbutton4 {
@@ -153,9 +160,9 @@
   border-radius: 8px;
 }
 
-#srcBtn {
+#searchFlights {
   display: block;
-  margin: auto;
+
   padding: 14px 60px;
   margin-top: 40px;
   background-color: #3662d8;
@@ -167,6 +174,8 @@
   font-size: 16px;
   font-family: 'Centra No2', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #srcBtn:hover {
@@ -193,4 +202,43 @@
   color: white;
   font-weight: 600;
   border: none;
+}
+#input-heading {
+  width: 90%;
+  margin: 0 auto;
+}
+.input_boxes {
+  display: flex;
+  width: 100%;
+
+  gap: 10px;
+}
+.input_boxes > input {
+  margin: 0;
+  width: 30vw;
+  padding: 18px;
+  outline: none;
+  border: 1.5px solid #727483;
+  border-radius: 8px;
+}
+#exchange-logo {
+  align-self: center;
+  cursor: pointer;
+}
+#exchange-logo:hover {
+  color: #3662d8;
+}
+
+@media only screen and (max-width: 700px) {
+  .input_boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+  }
+  .input_boxes > input {
+    width: 100%;
+  }
 }
