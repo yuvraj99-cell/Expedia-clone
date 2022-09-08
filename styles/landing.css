@@ -2,10 +2,16 @@
   padding: 0px;
   margin: 0px;
 }
+#input_box {
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
 
 .page {
   display: flex;
-  /* // justify-content: center; */
+  justify-content: center;
   width: 41%;
   /* border: 1px solid rgb(255, 4, 4);  */
   margin: auto;
@@ -211,6 +217,7 @@ input[type='checkbox'] {
 #bg-img-container {
   /* border: 1px solid rgb(121, 118, 118); */
   width: 90%;
+
   border-radius: 7px;
   margin: auto;
   margin-top: 50px;
@@ -408,16 +415,13 @@ p {
   border-radius: 8px;
   outline: none;
   border: 1px solid black;
-  padding-left: 10px;
-  margin-left: 30px;
+
   font-size: 15px;
 }
 .down_btns > input {
   height: 43px;
-  margin-left: 10px;
 }
 .down_btns > button {
-  margin-left: 10px;
   background-color: rgb(73, 73, 238);
   color: white;
   font-weight: 600;
@@ -538,7 +542,7 @@ h3 {
   margin-bottom: 51px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   #cmpny-info {
     display: flex;
     flex-direction: column;
