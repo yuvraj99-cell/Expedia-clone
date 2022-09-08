@@ -1,103 +1,221 @@
-* {
-  margin: 5px;
-  padding: 0px;
-}
-#navbar {
+#navbar,#right,#left{
   display: flex;
   justify-content: space-between;
 }
-#nav-1,
-#right {
-  margin-left: 5vw;
-  display: flex;
-  justify-content: space-between;
-}
-#nav-1 > div {
-  width: 12vw;
-}
-.dropbtn {
-  margin-top: -12px;
-}
-#right > a {
-  text-decoration: none;
-  color: rgb(91, 91, 91);
-  font-size: large;
-}
-hr {
-  padding: 0;
-  margin: 0;
-  margin-top: -3vh;
-  color: rgb(103, 103, 103);
-}
+#left>img{
+   width: 5vw;
+   height: 5vh;
 
-.icon {
+}
+body{
+   background-position: 10px 10px;
+   background-repeat: no-repeat;
+}* {
+   margin: 5px;
+   padding: 0px;
+ }
+ #navbar {
+   display: flex;
+   justify-content:space-around;
+   padding-bottom: 5px;
+  
+ }
+ 
+ 
+ #right {
+   margin-right:-9vw;
+   width: 35vw;
+   height: 5vh;
+   display: flex;
   text-align: center;
-  font-size: larger;
-}
-
-/* Dropdown Button */
-.dropbtn {
-  background-color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover,
-.dropbtn:focus {
-  color: blue;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 30vw;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-family: 'Centra No2', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #e7edfd;
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-  display: block;
-}
-.link {
-  height: 3vh;
-  width: 3vw;
-}
-.link1 {
-  height: 4vh;
-  width: 8.5vw;
-  margin-top: -0.7vh;
-}
-.icon {
-  margin-top: 0.5vh;
-}
-.link3 {
-  width: 5vh;
-  margin-left: 3vh;
-}
+ }
+ #middle{
+   display: none;
+ }
+ 
+ /* #nav-1 > div {
+   width: 12vw;
+ } */
+ div>img{
+   height:5.5vh;
+   width:17vh;
+   margin-left: -7.5vw;
+   margin-top: 0.2vh;
+   
+ }
+ .acc{
+   margin-top: 10px;
+ }
+ 
+ 
+ .static{
+   display: flex;
+   justify-content: space-evenly;
+   width: 13vw;
+   margin-left: -3vw;
+  
+ }
+ #right >.static> a{
+   text-decoration: none;
+   color: rgb(91, 91, 91);
+   width:20%;
+ }
+ #right >.desktop-nav> a {
+   text-decoration: none;
+   color: rgb(91, 91, 91);
+   font-size: large;
+ 
+ }
+ .desktop-nav{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 7px;
+   width: 25vw;
+  
+   
+  
+ }
+ .line{
+  
+   padding: 0;
+   margin: 0;
+   margin-top: -2vh;
+   color: rgb(103, 103, 103);
+ }
+ 
+ .icon {
+   text-align: center;
+   font-size: larger;
+ }
+ .drp-dwn{
+   margin-left: -22vw;
+ }
+ 
+ /* Dropdown Button */
+ .dropbtn {
+   background-color: white;
+   padding:15px;
+   padding-left: 0%;
+   padding-right: 0%;
+   font-size:90%;
+   border: none;
+   cursor: pointer;
+   margin-top:  -1.5vh;
+   color: black;
+ }
+ 
+ /* Dropdown button on hover & focus */
+ .dropbtn:hover,
+ .dropbtn:focus {
+   color: blue;
+ }
+ 
+ /* The container <div> - needed to position the dropdown content */
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ /* Dropdown Content (Hidden by Default) */
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: white;
+   min-width: 30vw;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+ }
+ 
+ /* Links inside the dropdown */
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   font-family: 'Centra No2', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+     Roboto, 'Helvetica Neue', Arial, sans-serif;
+ }
+ 
+ /* Change color of dropdown links on hover */
+ .dropdown-content a:hover {
+   background-color: #e7edfd;
+ }
+ 
+ /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+ .show {
+   display: block;
+ }
+ .tab-nav-bag>a{
+   text-decoration: none;
+   color: rgb(91, 91, 91);
+   font-size: large;
+ }
+ .tab-nav-bag{
+   display: none; 
+ }
+ 
+ 
+ @media(max-width:62em){
+   .desktop-nav{
+     display:none;
+     text-align: center;
+  }
+ .tab-nav-bag{
+   display:flex;
+   margin-top: 8px;
+   margin-right: -3vw;
+   text-align: center;
+ }
+ 
+ #right{
+   width:30vw;
+  text-align: center;
+  justify-content: space-evenly;
+  
+ }
+ .static{
+   width: 15vw;
+   margin-left: -3vw;
+  
+ }
+ .static> a{
+   text-decoration: none;
+   color: rgb(91, 91, 91);
+   width:20%;
+  
+ }
+ 
+ 
+ 
+ }
+ 
+ @media(max-width:36em){
+ #middle{
+   display: block;
+   margin-top: 10.5px;
+   margin-left: -5vw;
+   
+ }
+ .tab-nav-bag{
+   margin-left: -4vw;
+ }
+ .acc{
+   margin-left: 15px;
+ }
+ 
+ .drp-dwn{
+   display: none;
+   
+ }
+ 
+ img{
+   width: 10%;
+   height: 10%;
+ }
+ }
+ 
+ 
+ 
+ 
+ 
+ 

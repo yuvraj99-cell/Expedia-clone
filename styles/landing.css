@@ -1,6 +1,7 @@
-* {
+/* * {
   padding: 0px;
   margin: 0px;
+<<<<<<< HEAD
 }
 #input_box {
   border: 1px solid grey;
@@ -8,6 +9,9 @@
   width: 90%;
   margin: 0 auto;
 }
+=======
+} */
+>>>>>>> 90417199740904e841c7fd2121642140aa92490a
 
 .page {
   display: flex;
@@ -82,7 +86,7 @@ hr {
 
 #chk-in {
   position: absolute;
-  right: 68.8%;
+  right: 69.5%;
   top: 10px;
   /* font-size: 13px; */
   /* padding: 1.6px; */
@@ -92,7 +96,7 @@ hr {
 }
 #chk-out {
   position: absolute;
-  right: 48.5%;
+  right: 48.9%;
   top: 10px;
 }
 
