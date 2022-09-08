@@ -1,4 +1,4 @@
-document.querySelector('#srcBtn').addEventListener('click', getFlights);
+document.querySelector('#searchFlights').addEventListener('click', getFlights);
 
 async function getFlights(event) {
   document.getElementById('mainContent').style.display = 'flex';
@@ -11,16 +11,26 @@ async function getFlights(event) {
   try {
     document.getElementById(
       'appendHere'
-    ).innerHTML = `<img  src="https://image.shutterstock.com/image-vector/airplane-icon-white-on-light-260nw-691819741.jpg">`;
+    ).innerHTML = `<img id="waiting-img"  src="https://image.shutterstock.com/image-vector/airplane-icon-white-on-light-260nw-691819741.jpg">`;
+
     const res = await fetch(
       `http://localhost:3000/flights?from=${from}&to=${to}`
     );
+
     const res2 = await res.json();
     console.log(res2);
+    if (res2.length < 1) {
+      document.getElementById(
+        'appendHere'
+      ).innerHTML = `<img id="waiting-img"  src="https://www.sotc.in/images/flight/noResultFound.jpg">`;
+      return;
+    }
 
-    displayFlights(res2);
+    setTimeout(() => {
+      displayFlights(res2);
+    }, 1500);
   } catch (err) {
-    console.log(err);
+    console.log(err, 'aasd');
   }
 }
 
