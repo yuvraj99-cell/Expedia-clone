@@ -30,7 +30,7 @@ export const navbar = () => `
 </div>
  </div>
  <div id="right">
-   <div id="middle"><i class="fa-solid fa-magnifying-glass"></i></div>
+   <div id="middle"><box-icon name='search' animation='tada' color='#131413' ></box-icon></div>
    <div class="tab-nav-bag"><box-icon name='shopping-bag' type='solid' animation='tada' ></box-icon></div>
    <div class="desktop-nav">
      <a href="#"> English</a>
@@ -39,7 +39,7 @@ export const navbar = () => `
    </div>
      <div class="static">
      <a href="#"><box-icon name='bell-ring' type='solid' animation='tada' ></box-icon></a>
-     <a  class="acc" href="./signUp.html"><i class="fa-solid fa-user fa-lg"></i></a>
+     <a  class="acc" href="./signUp.html"><box-icon name='user' animation='flashing' color='#131413' ></box-icon></a>
  </div>
 </div>
 

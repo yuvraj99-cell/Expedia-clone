@@ -182,7 +182,7 @@ body {
 @media (max-width: 36em) {
   #middle {
     display: block;
-    margin-top: 10.5px;
+    margin-top: 2px;
     margin-left: -5vw;
   }
   .tab-nav-bag {
