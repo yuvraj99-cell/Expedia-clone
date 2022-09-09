@@ -152,17 +152,17 @@ body {
 }
 
 @media (max-width: 62em) {
-  body{
+  body {
     background-image: url('https://www.expedia.com/_dms/header/logo.svg');
-    background-position: 15px -8px;
+    background-position: 10px -14px;
     background-size: 100px 100px;
   }
   .desktop-nav {
     display: none;
     text-align: center;
   }
-  #navbar>div>a{
-   display: none;
+  #navbar > div > a {
+    display: none;
   }
   .tab-nav-bag {
     display: flex;
@@ -179,6 +179,7 @@ body {
   .static {
     width: 15vw;
     margin-left: -3vw;
+    justify-content: space-around;
   }
   .static > a {
     text-decoration: none;
@@ -190,18 +191,74 @@ body {
 @media (max-width: 36em) {
   #middle {
     display: block;
-    margin-top: 2px;
-    margin-left: -5vw;
   }
-  
+
   .tab-nav-bag {
     margin-left: -4vw;
-  }
-  .acc {
-    margin-left: 15px;
   }
 
   .drp-dwn {
     display: none;
   }
+}
+#modal-box {
+  /* display: none; */
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  right: 70px;
+  top: 70px;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 400;
+  border-radius: 10px;
+  width: 300px;
+}
+#modal-box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#modal-box > div > * {
+  margin-top: 10px;
+}
+#signOutBtn {
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: transparent;
+  cursor: pointer;
+}
+#ghanta {
+  margin-top: 4px;
+}
+#signOutBtn:hover {
+  background-color: rgb(121, 121, 121);
+  color: white;
+}
+#blueMember {
+  background-color: rgb(45, 20, 210);
+  width: 100px;
+  margin: 0 auto;
+  padding: 3px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #e7edfd;
+}
+@media only screen and (max-width: 700px) {
+  #modal-box {
+    width: 100%;
+    right: 0;
+  }
+}
+.acc {
+  font-size: 22px;
+  cursor: pointer;
+}
+.acc :hover {
+  color: rgb(107, 107, 107);
 }

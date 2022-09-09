@@ -8,6 +8,7 @@
   margin: 0 auto;
   border-radius: 10px;
   margin-top: 50px;
+  overflow: hidden;
 }
 .page {
   display: flex;
@@ -542,6 +543,18 @@ h3 {
   /* border: 1px solid black; */
   margin-bottom: 51px;
 }
+.input_button {
+  animation-name: come;
+  animation-duration: 500ms;
+}
+@keyframes come {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 @media only screen and (max-width: 700px) {
   #cmpny-info {
@@ -580,10 +593,9 @@ h3 {
   .input_button {
     flex-direction: column;
   }
-  #Qr-cont{
+  #Qr-cont {
     display: none;
   }
-  
 }
 
 /*   LAST SECTION END! */

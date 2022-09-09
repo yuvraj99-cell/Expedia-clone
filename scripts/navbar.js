@@ -13,7 +13,7 @@ export const navbar = () => `
      </button>
      
      <div id="myDropdown" class="dropdown-content">
-         <a  href="./hotels.html"><box-icon name='buildings' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Stays</a>
+         <a  href="./hotel.html"><box-icon name='buildings' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Stays</a>
          <a  href="./flights.html"><box-icon name='plane-alt' type='solid' animation='burst' color='#7f7b7c' ></box-icon> &nbsp;  Flight</a>
          <a  href="#"><box-icon name='car' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Car</a>
          <a  href="#"> <box-icon name='briefcase-alt' type='solid' flip='horizontal' animation='tada' color='#7f7b7c' ></box-icon> &nbsp; Packages</a>
@@ -30,8 +30,8 @@ export const navbar = () => `
 </div>
  </div>
  <div id="right">
-   <div id="middle"><box-icon name='search' animation='tada' color='#131413' ></box-icon></div>
-   <div class="tab-nav-bag"><box-icon name='shopping-bag' type='solid' animation='tada' ></box-icon></div>
+   <div class="acc" id="middle"><i class="fa-solid fa-bars"></i></div>
+   
    <div class="desktop-nav">
    <div id="translate"> 
   
@@ -41,30 +41,24 @@ export const navbar = () => `
      <a href="#">Trips</a>
    </div>
      <div class="static">
-     <a href="#"><box-icon name='bell-ring' type='solid' animation='tada' ></box-icon></a>
-     <a  class="acc" href="./signUp.html"><box-icon name='user' animation='flashing' color='#131413' ></box-icon></a>
+     <a class="acc" href="#"><box-icon id="ghanta" name='bell-ring' type='solid' animation='tada'></box-icon></a>
+     <a class="acc" onclick="openModal()"><i class="fa-solid fa-circle-user"></i></a>
+
  </div>
+</div>
+<div id="modal-box">
+
+<div id="acDetails">
+    <h3 id="userName">Hi, FAIZAN</h3>
+    <p id="userEmail">faizan@gmail.com</p>
+    <p id="blueMember">Blue Member</p>
+
+</div>
+<hr>
+<div id="signout"><button id="signOutBtn">Sign Out</button></div>
 </div>
 
 </div>
 <hr class="line">
 
 `;
-
-function myFunction() {
-  document.getElementById('myDropdown').classList.toggle('show');
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName('dropdown-content');
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-};

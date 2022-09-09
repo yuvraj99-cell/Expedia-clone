@@ -40,9 +40,6 @@ function goToFlights() {
 
   document.getElementById('change-page').innerHTML = div;
   document.getElementById('srcBtn').addEventListener('click', () => {
-    const from = document.getElementById('fbutton1').value;
-    const to = document.getElementById('fbutton2').value;
-
     window.location.href = './flights.html';
   });
 }
@@ -69,3 +66,30 @@ window.onclick = function (event) {
     }
   }
 };
+function openModal() {
+  let flag = localStorage.getItem('islogged');
+  if (flag === null) {
+    document.getElementById('acDetails').innerHTML =
+      '<h3>Please Sign In or Create a New Account</h3>';
+    document.getElementById('signOutBtn').innerText = 'Log In';
+    document
+      .getElementById('signOutBtn')
+      .addEventListener('click', function () {
+        window.location.href = '../login.html';
+      });
+  } else {
+    console.log('asdad');
+
+    document
+      .getElementById('signOutBtn')
+      .addEventListener('click', function () {
+        localStorage.removeItem('islogged');
+        window.location.href = '../index.html';
+      });
+  }
+  if (document.getElementById('modal-box').style.display == 'flex') {
+    document.getElementById('modal-box').style.display = 'none';
+  } else {
+    document.getElementById('modal-box').style.display = 'flex';
+  }
+}
