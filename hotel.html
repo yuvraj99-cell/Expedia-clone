@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPEDIA-Flights-Return</title>
+    
+    <link rel="stylesheet" href="./styles/landing.css">
+    
+    <link rel="stylesheet" href="./styles/flights.css">
+   
+    <link rel="stylesheet" href="./styles/search.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link
+    rel="icon"
+    href="https://www.expedia.com/favicon.ico"
+    type="logo.svg"
+  />
+    
+   
+    <script defer src="./scripts/index.js" type="module"></script>
+    <script defer src="./scripts/index.js" type="module"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  
+
+    <script src="https://kit.fontawesome.com/e488acc005.js" crossorigin="anonymous"></script>
+    <style>     
+    </style>
+</head>
+
+<body>
+    <div id="navBar"></div>
+   
+
+
+
+
+    <!-- /* Top SEction START !*/ -->
+    
+        
+        
+
+      
+       
+        <div id="append-input">
+            <div id="input-heading">
+            <h1 id="page-title">Search Stays</h1>
+            <div class="input_boxes">
+                
+                <input id="from" class="fbutton1" type="text" placeholder="Going To"></input>
+    
+               <i id="exchange-logo" class="fa-solid fa-exchange"></i>
+    
+              
+                <input id="to" class="fbutton2" onfocus="(this.type='date')" onblur="(this.type='text')"
+                value="Check-in"></input>
+    
+               
+                <input class="fbutton3" onfocus="(this.type='date')" onblur="(this.type='text')"
+                    value="Check-out"></input>
+    
+            </div>
+            <button id="searchFlights">Search</button>
+        </div>
+    </div>
+   
+        <!-- /* Top SEction End !*/ -->
+
+        <!-- ***************************************************************** -->
+
+        <!-- Mid-Section START! -->
+        
+        <div id="bg-img-container">
+            <div id="bg-img">
+
+                <div id="bg-color">
+                    <div id="text-content">
+                        <h1>Save instantly with Expedia Rewards</h1>
+                        <p>You can enjoy access to perks like Member Prices, saving you 10% or more on select hotels.
+                            Terms may apply.</p>
+                        <button>
+                            <div id="btn-text">See Member Price</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bg-img-container2">
+            <div id="box-sizing">
+                <div id="bg-img2">
+                    <div id="bg-color2"></div>
+                </div>
+                <div>Plan ahead and save <br>Book 60 days in advance for 20% off select stays.</div>
+            </div>
+
+            <div id="Qr-cont">
+                <div id="img-cont"><img
+                        src="https://a.travel-assets.com/travel-assets-manager/8b9c5cbf-f527-49fb-b881-8d7037952a89/assurance_4_562x240-2x.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh"
+                        alt=""></div>
+                <div id="text-contQr">
+                    <h1>Our app takes you further</h1>
+                    <p>Earn double Expedia Rewards points when you book on the app, plus get travel alerts and manage
+                        your bookings on the go.</p>
+                    <h4>Text yourself a download link for easy access</h4>
+
+                    <div class="down_btns">
+                        <select id="countryCode">
+                            <option value="code">Country code</option>
+                            <option value="+93,Afghanistan">Afghanistan +93</option>
+                            <option value="+672,Antarctica">Antarctica +672</option>
+                            <option value="+54,Argentina">Argentina +54</option>
+                            <option value="+61,Australia">Australia +61</option>
+                            <option value="+43,Austria">Austria +43</option>
+                            <option value="+880,Bangladesh">Bangladesh +880</option>
+                            <option value="+32,Belgium">Belgium +32</option>
+                            <option value="+975,Bhutan">Bhutan +975</option>
+                            <option value="+55,Brazil">Brazil +55</option>
+                            <option value="+1,Canada">Canada +1</option>
+                            <option value="+86,China">China +86</option>
+                            <option value="+45,Denmark">Denmark +45</option>
+                            <option value="+20,Egypt">Egypt +20</option>
+                            <option value="+33,France">France +33</option>
+                            <option value="+49,Germany">Germany +49</option>
+                            <option value="+30,Greece">Greece +30</option>
+                            <option value="+299,Greenland">Greenland +299</option>
+                            <option value="+852,HongKong">Hong Kong SAR +852</option>
+                            <option value="+36,Hungary">Hungary +36</option>
+                            <option value="+354,Iceland">Iceland +354</option>
+                            <option selected="" value="+91,India">India +91</option>
+                            <option value="+62,Indonesia">Indonesia +62</option>
+                            <option value="+98,Iran">Iran +98</option>
+                            <option value="+964,Iraq">Iraq +964</option>
+                            <option value="+353,Ireland">Ireland +353</option>
+                            <option value="+972,Israel">Israel +972</option>
+                            <option value="+39,Italy">Italy +39</option>
+                            <option value="+1,Jamaica">Jamaica +1</option>
+                            <option value="+81,Japan">Japan +81</option>
+                            <option value="+60,Malaysia">Malaysia +60</option>
+                            <option value="+960,Maldives">Maldives +960</option>
+                            <option value="+230,Mauritius">Mauritius +230</option>
+                            <option value="+52,Mexico">Mexico +52</option>
+                            <option value="+977,Nepal">Nepal +977</option>
+                            <option value="+31,Netherlands">Netherlands +31</option>
+                            <option value="+64,New_Zealand">New Zealand +64</option>
+                            <option value="+234,Nigeria">Nigeria +234</option>
+                            <option value="+850,North_Korea">North Korea +850</option>
+                            <option value="+47,Norway">Norway +47</option>
+                            <option value="+968,Oman">Oman +968</option>
+                            <option value="+92,Pakistan">Pakistan +92</option>
+                            <option value="+63,Philippines">Philippines +63</option>
+                            <option value="+48,Poland">Poland +48</option>
+                            <option value="+351,Portugal">Portugal +351</option>
+                            <option value="+40,Romania">Romania +40</option>
+                            <option value="+7,Russia">Russia +7</option>
+                            <option value="+966,Saudi_Arabia">Saudi Arabia +966</option>
+                            <option value="+65,Singapore">Singapore +65</option>
+                            <option value="+421,Slovakia">Slovakia +421</option>
+                            <option value="+27,South_Africa">South Africa +27</option>
+                            <option value="+82,South_Korea">South Korea +82</option>
+                            <option value="+94,Sri_Lanka">Sri Lanka +94</option>
+                            <option value="+46,Sweden">Sweden +46</option>
+                            <option value="+41,Switzerland">Switzerland +41</option>
+                            <option value="+886,Taiwan">Taiwan +886</option>
+                            <option value="+992,Tajikistan">Tajikistan +992</option>
+                            <option value="+66,Thailand">Thailand +66</option>
+                            <option value="+993,Turkmenistan">Turkmenistan +993</option>
+                            <option value="+688,Tuvalu">Tuvalu +688</option>
+                            <option value="+380,Ukraine">Ukraine +380</option>
+                            <option value="+971,United_Arab_Emirates">United Arab Emirates +971</option>
+                            <option value="+44,United_Kingdom">United Kingdom +44</option>
+                            <option value="+1,USA">United States of America +1</option>
+                            <option value="+39,Vatican_City">Vatican City +39</option>
+                            <option value="+58,Venezuela">Venezuela +58</option>
+                            <option value="+84,Vietnam">Vietnam +84</option>
+                            <option value="+263,Zimbabwe">Zimbabwe +263</option>
+                        </select>
+                        <input type="text" placeholder="Phone Number">
+                        <button>Get the app</button>
+                    </div>
+                
+           
+                    <p style="color:black">By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+                </div>
+                <div id="Qr-logo">
+                    <div>
+                        <img src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/27_QR_FOOTER_HP.png"
+                            alt="">
+                        <p>Scan the QR code</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- search div -->
+        <div id="mainContent">
+            <div id="filters">
+              <h3>Filter by</h3>
+              <h4>Airlines</h4>
+              <div>
+                <input type="checkbox" class="chk" value="Indigo" />
+                <label>IndiGo</label>
+              </div>
+              <div>
+                <input type="checkbox" class="chk" value="Vistara" />
+                <label>Vistara</label>
+              </div>
+              <div>
+                <input type="checkbox" class="chk" value="Spice Jet" />
+                <label>Spice Jet</label>
+              </div>
+              <div>
+                <input type="checkbox" class="chk" value="Go First" />
+                <label>Go First</label>
+              </div>
+            </div>
+            <div id="flights">
+              <div id="para-sort">
+                <div id="para">
+                  <p>
+                    Prices displayed include taxes and may change based on
+                    availability. You can review any additional fees before checkout.
+                    Prices are not final until you complete your purchase.
+                  </p>
+                </div>
+                <div id="bar">
+                  <select id="sortBar">
+                    <option value="">Sort By</option>
+                    <option value="LH">Price(Lowest)</option>
+                    <option value="HL">Price(Higest)</option>
+                  </select>
+                </div>
+              </div>
+              <div id="appendHere"></div>
+            </div>
+            <div id="banner">
+              <img
+                src="https://tpc.googlesyndication.com/simgad/17447823249981941085?"
+                alt=""
+              />
+            </div>
+          </div>
+        <!-- Mid Section END! -->
+
+        <!-- ***************************************************************** -->
+
+        <!-- Last Section START! -->
+
+        <div id="last-sec">
+            <h3>Explore a world of travel with Expedia</h3>
+            <a href="">Discover new places and experiences</a>
+        </div>
+
+        <div id="cmpny-info">
+            <div>
+                <div><img
+                        src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+                        alt=""></div>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <a href="">About us</a>
+                <a href="">Jobs</a>
+                <a href="">List your property</a>
+                <a href="">Partnerships</a>
+            </div>
+            <div>
+                <h3>Explore</h3>
+                <a href="">India travel guide</a>
+                <a href="">Hotels in India</a>
+                <a href="">Holiday rentals in India</a>
+                <a href="">Holiday packages in India</a>
+                <a href="">Domestic flights</a>
+                <a href="">Car hire in India</a>
+                <a href="">All accommodation types</a>
+                <a href="">Travel blog</a>
+            </div>
+            <div>
+                <h3>Terms and policies</h3>
+                <a href="">Privacy Statement</a>
+                <a href="">Terms of use</a>
+                <a href="">Vrbo terms and conditions</a>
+            </div>
+            <div>
+                <h3>Help</h3>
+                <a href="">Support</a>
+                <a href="">Change or cancel your booking</a>
+                <a href="">Refund process and timelines</a>
+                <a href="">Book a flight using an airline credit</a>
+                <a href="">International travel documents</a>
+            </div>
+
+        </div>
+        <hr id="hr">
+        <div id="last-logo-cont">
+            <div>
+                <img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" alt="">
+            </div>
+        </div>
+        <div id="end">
+            <p>© 2022 Expedia, Inc., an Expedia Group company / Expedia Asia Holdings Mauritius / BEX Travel Asia Pte.
+                Ltd. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of
+                Expedia, Inc.</p>
+        </div>
+        
+
+
+     
+
+
+</body>
+
+</html>
+
+
+<script>
+    document.querySelector("#sty").addEventListener("click",function(){
+
+    window.location.href="./index.html"
+
+   
+  
+
+})
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName('dropdown-content');
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  };
+function myFunction() {
+    document.getElementById('myDropdown').classList.toggle('show');
+  }
+
+
+
+
+</script>
+<script src="./scripts/search.js"></script>
