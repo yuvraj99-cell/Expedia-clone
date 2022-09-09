@@ -154,7 +154,7 @@ body {
 @media (max-width: 62em) {
   body{
     background-image: url('https://www.expedia.com/_dms/header/logo.svg');
-    background-position: 15px -8px;
+    background-position: 15px -17px;
     background-size: 100px 100px;
   }
   .desktop-nav {
