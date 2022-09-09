@@ -3,6 +3,7 @@ body {
   font-family: Arial;
   font-size: 17px;
   padding: 8px;
+  background-image: url('');
   background-image: url('https://images.theconversation.com/files/428796/original/file-20211027-14984-ps78if.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip');
   background-repeat: no-repeat;
 
@@ -49,8 +50,9 @@ body {
   border-radius: 3px;
   width: 60%;
   margin: auto;
-  opacity: 0.9;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  opacity: 0.8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 10px;
   
 }
 
@@ -60,6 +62,9 @@ input[type=text] {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 10px;
+
 }
 
 label {
@@ -83,6 +88,8 @@ label {
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
 }
 
 .btn:hover {
