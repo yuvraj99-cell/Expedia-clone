@@ -548,6 +548,12 @@ h3 {
     display: flex;
     flex-direction: column;
   }
+  #bg-img {
+    background-image: url('https://images.pexels.com/photos/3889855/pexels-photo-3889855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    background-size: 100% 100%;
+  }
   #input_button {
     display: flex;
     flex-direction: column;
@@ -574,6 +580,10 @@ h3 {
   .input_button {
     flex-direction: column;
   }
+  #Qr-cont{
+    display: none;
+  }
+  
 }
 
 /*   LAST SECTION END! */

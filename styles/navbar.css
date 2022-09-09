@@ -152,9 +152,17 @@ body {
 }
 
 @media (max-width: 62em) {
+  body{
+    background-image: url('https://www.expedia.com/_dms/header/logo.svg');
+    background-position: 15px -8px;
+    background-size: 100px 100px;
+  }
   .desktop-nav {
     display: none;
     text-align: center;
+  }
+  #navbar>div>a{
+   display: none;
   }
   .tab-nav-bag {
     display: flex;
@@ -185,6 +193,7 @@ body {
     margin-top: 2px;
     margin-left: -5vw;
   }
+  
   .tab-nav-bag {
     margin-left: -4vw;
   }
