@@ -33,7 +33,10 @@ export const navbar = () => `
    <div id="middle"><box-icon name='search' animation='tada' color='#131413' ></box-icon></div>
    <div class="tab-nav-bag"><box-icon name='shopping-bag' type='solid' animation='tada' ></box-icon></div>
    <div class="desktop-nav">
-     <a href="#"> English</a>
+   <div id="translate"> 
+  
+      
+   </div>
      <a href="#">Support</a>
      <a href="#">Trips</a>
    </div>
