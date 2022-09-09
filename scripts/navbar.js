@@ -39,6 +39,7 @@ export const navbar = () => `
    </div>
      <div class="static">
      <a href="#"><box-icon name='bell-ring' type='solid' animation='tada' ></box-icon></a>
+     <a class="acc" onclick="openModal()"><i class="fa-solid fa-circle-user"></i></a>
 
  </div>
 </div>
