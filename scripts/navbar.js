@@ -39,29 +39,22 @@ export const navbar = () => `
    </div>
      <div class="static">
      <a href="#"><box-icon name='bell-ring' type='solid' animation='tada' ></box-icon></a>
-     <a  class="acc" href="./signUp.html"><i class="fa-solid fa-user fa-lg"></i></a>
+     <a onclick="openModal()"  class="acc" href="#"><i  class="fa-solid fa-user fa-lg"></i></a>
  </div>
+</div>
+<div id="modal-box">
+
+<div id="acDetails">
+    <h3 id="userName">Hi, FAIZAN</h3>
+    <p id="userEmail">faizan@gmail.com</p>
+    <p id="blueMember">Blue Member</p>
+
+</div>
+<hr>
+<div id="signout"><button id="signOutBtn">Sign Out</button></div>
 </div>
 
 </div>
 <hr class="line">
 
 `;
-
-function myFunction() {
-  document.getElementById('myDropdown').classList.toggle('show');
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName('dropdown-content');
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-};

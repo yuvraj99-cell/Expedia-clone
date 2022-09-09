@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#flexible {
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  height: 30%;
+  background-color: white;
+  align-items: center;
+  gap: 10px;
+}
+#flexible > div > a {
+  text-decoration: none;
+}
+#first {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  min-width: 350px;
+  width: 800px;
+}
+#second {
+  width: 400px;
+  min-width: 350px;
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+#flightInformation {
+  height: 65%;
+  border-radius: 10px;
+  background-color: white;
+}
+#box-parent {
+  display: flex;
+  padding: 20px 70px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.flight-logo {
+  width: 30px;
+}
+#fromTo {
+  padding: 30px;
+}
+#time {
+  padding: 30px;
+}
+
+#info {
+  background-color: rgb(245, 240, 233);
+  margin-top: -50px;
+}
+.float {
+  float: right;
+}
+#verySmall {
+  font-size: 11px;
+}
+#checkoutBtn {
+  padding: 10px 30px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid grey;
+  background-color: rgb(56, 56, 248);
+  color: white;
+  cursor: pointer;
+}
+#price-summary {
+  margin-bottom: 30px;
+}
+#logo-text {
+  display: flex;
+  align-items: center;
+}
+#fromToDiv {
+  padding-top: 50px;
+  margin-left: 4vw;
+  padding-left: 30px;
+  width: 200px;
+}

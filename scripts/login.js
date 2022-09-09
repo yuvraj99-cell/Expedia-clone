@@ -76,6 +76,7 @@ loginForm.addEventListener('submit', function () {
       } else {
         show_alert.classList.remove('visible-alert');
         alert('Login successful !');
+        localStorage.setItem('islogged', 1);
 
         window.location.href = './index.html';
       }
