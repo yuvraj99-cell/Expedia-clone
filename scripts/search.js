@@ -54,6 +54,7 @@ function displayFlights(data) {
     document.getElementById('appendHere').append(div);
   });
 }
+
 const modalOpen = (ele) => {
   if (document.getElementById('modal') != null) {
     closeModal();
@@ -75,16 +76,54 @@ const modalOpen = (ele) => {
       <div id="priceDiv">
         <h2>Rs ${ele.price}</h2>
         <p class="smallText">Rs ${ele.price} one way for 1 traveller</p>
-        <button onclick="checkout()" id="selectBtn">Select</button>
+        <button id="selectBtn">Select</button>
       </div>
       
     </div>
   `;
+
   document.querySelector('body').append(div);
+  document.getElementById('selectBtn').addEventListener('click', function () {
+    localStorage.setItem('flightInfo', JSON.stringify(ele));
+    if (localStorage.getItem('islogged') == null) {
+      alert('please Sign In First !');
+      window.location.href = './login.html';
+      return;
+    } else {
+      window.location.href = './flightInfo.html';
+    }
+  });
 };
 
 function closeModal() {
   document.getElementById('modal').remove();
+}
+function openModal() {
+  let flag = localStorage.getItem('islogged');
+  if (flag === null) {
+    document.getElementById('acDetails').innerHTML =
+      '<h3>Please Sign In or Create a New Account</h3>';
+    document.getElementById('signOutBtn').innerText = 'Log In';
+    document
+      .getElementById('signOutBtn')
+      .addEventListener('click', function () {
+        window.location.href = '../login.html';
+      });
+  } else {
+    console.log('asdad');
+
+    document
+      .getElementById('signOutBtn')
+      .addEventListener('click', function () {
+        localStorage.removeItem('islogged');
+        window.location.href = '../flights.html';
+      });
+  }
+  if (document.getElementById('modal-box').style.display == 'flex') {
+    document.getElementById('modal-box').style.display = 'none';
+  } else {
+    document.getElementById('modal-box').style.display = 'flex';
+  }
 }
 
 // function filter(res) {
