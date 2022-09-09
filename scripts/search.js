@@ -1,5 +1,6 @@
 document.querySelector('#searchFlights').addEventListener('click', getFlights);
-
+let arr = [];
+let globalArr = [];
 async function getFlights(event) {
   document.getElementById('mainContent').style.display = 'flex';
   document.getElementById('bg-img-container2').style.display = 'none';
@@ -19,6 +20,9 @@ async function getFlights(event) {
 
     const res2 = await res.json();
     console.log(res2);
+    arr = res2;
+    globalArr = res2;
+
     if (res2.length < 1) {
       document.getElementById(
         'appendHere'
@@ -126,29 +130,71 @@ function openModal() {
   }
 }
 
-// function filter(res) {
-//   let arr = [];
-//   let count = 0;
-//   const chkbox = document.querySelectorAll('.chk');
-//   chkbox.forEach((ele) => {
-//     ele.addEventListener('click', function () {
-//       chkbox.forEach((ele) => {
-//         if (ele.checked) {
-//           let res3 = res.filter((elem) => {
-//             return elem.airlines == ele.value;
-//           });
-//           arr = [...res3];
+document.getElementById('Indigo').addEventListener('click', function () {
+  filter(arr);
+});
+document.getElementById('Vistara').addEventListener('click', function () {
+  filter(arr);
+});
+document.getElementById('Spice Jet').addEventListener('click', function () {
+  filter(arr);
+});
+document.getElementById('Go First').addEventListener('click', function () {
+  filter(arr);
+});
 
-//           count++;
-//         }
-//       });
-//     });
-//     if (count === 0) {
-//       return res;
-//     } else {
-//       return arr;
-//     }
-//   });
+function filter(data) {
+  let mainArr = [];
+  if (document.getElementById('Indigo').checked) {
+    let newArr = data.filter((el) => {
+      return el.airlines == 'Indigo';
+    });
+    mainArr = mainArr.concat(newArr);
+  }
+  if (document.getElementById('Vistara').checked) {
+    let newArr = data.filter((el) => {
+      return el.airlines == 'Vistara';
+    });
+    mainArr = mainArr.concat(newArr);
+  }
+  if (document.getElementById('Spice Jet').checked) {
+    let newArr = data.filter((el) => {
+      return el.airlines == 'Spice Jet';
+    });
+    mainArr = mainArr.concat(newArr);
+  }
+  if (document.getElementById('Go First').checked) {
+    let newArr = data.filter((el) => {
+      return el.airlines == 'Go First';
+    });
+    mainArr = mainArr.concat(newArr);
+  }
+  if (
+    !document.getElementById('Indigo').checked &&
+    !document.getElementById('Go First').checked &&
+    !document.getElementById('Spice Jet').checked &&
+    !document.getElementById('Vistara').checked
+  ) {
+    mainArr = [...data];
+  }
+  globalArr = [...mainArr];
+  displayFlights(mainArr);
+}
+document.getElementById('sortBar').addEventListener('change', function () {
+  if (document.getElementById('sortBar').value === 'LH') {
+    // console.log('ASDAd');
+    // console.log(globalArr);
+    globalArr.sort(function (a, b) {
+      return a.price - b.price;
+    });
 
-//   return newArr;
-// }
+    displayFlights(globalArr);
+  } else if (document.getElementById('sortBar').value === 'HL') {
+    globalArr.sort(function (a, b) {
+      return b.price - a.price;
+    });
+    displayFlights(globalArr);
+  } else {
+    displayFlights(globalArr);
+  }
+});

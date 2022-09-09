@@ -545,14 +545,14 @@ h3 {
 }
 .input_button {
   animation-name: come;
-  animation-duration: 300ms;
+  animation-duration: 500ms;
 }
 @keyframes come {
   from {
-    margin-left: -500px;
+    opacity: 0.1;
   }
   to {
-    margin-left: 60px;
+    opacity: 1;
   }
 }
 
@@ -593,10 +593,9 @@ h3 {
   .input_button {
     flex-direction: column;
   }
-  #Qr-cont{
+  #Qr-cont {
     display: none;
   }
-  
 }
 
 /*   LAST SECTION END! */

@@ -154,7 +154,7 @@ body {
 @media (max-width: 62em) {
   body {
     background-image: url('https://www.expedia.com/_dms/header/logo.svg');
-    background-position: 15px -8px;
+    background-position: 10px -14px;
     background-size: 100px 100px;
   }
   .desktop-nav {
@@ -179,6 +179,7 @@ body {
   .static {
     width: 15vw;
     margin-left: -3vw;
+    justify-content: space-around;
   }
   .static > a {
     text-decoration: none;
@@ -190,15 +191,10 @@ body {
 @media (max-width: 36em) {
   #middle {
     display: block;
-    margin-top: 2px;
-    margin-left: -5vw;
   }
 
   .tab-nav-bag {
     margin-left: -4vw;
-  }
-  .acc {
-    margin-left: 15px;
   }
 
   .drp-dwn {
@@ -236,6 +232,9 @@ body {
   border-radius: 10px;
   border: transparent;
   cursor: pointer;
+}
+#ghanta {
+  margin-top: 4px;
 }
 #signOutBtn:hover {
   background-color: rgb(121, 121, 121);

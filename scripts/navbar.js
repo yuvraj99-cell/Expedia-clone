@@ -13,7 +13,7 @@ export const navbar = () => `
      </button>
      
      <div id="myDropdown" class="dropdown-content">
-         <a  href="./hotels.html"><box-icon name='buildings' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Stays</a>
+         <a  href="./hotel.html"><box-icon name='buildings' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Stays</a>
          <a  href="./flights.html"><box-icon name='plane-alt' type='solid' animation='burst' color='#7f7b7c' ></box-icon> &nbsp;  Flight</a>
          <a  href="#"><box-icon name='car' animation='burst' color='#7f7b7c' ></box-icon> &nbsp; Car</a>
          <a  href="#"> <box-icon name='briefcase-alt' type='solid' flip='horizontal' animation='tada' color='#7f7b7c' ></box-icon> &nbsp; Packages</a>
@@ -30,15 +30,15 @@ export const navbar = () => `
 </div>
  </div>
  <div id="right">
-   <div id="middle"><box-icon name='search' animation='tada' color='#131413' ></box-icon></div>
-   <div class="tab-nav-bag"><box-icon name='shopping-bag' type='solid' animation='tada' ></box-icon></div>
+   <div class="acc" id="middle"><i class="fa-solid fa-bars"></i></div>
+   
    <div class="desktop-nav">
      <a href="#"> English</a>
      <a href="#">Support</a>
      <a href="#">Trips</a>
    </div>
      <div class="static">
-     <a href="#"><box-icon name='bell-ring' type='solid' animation='tada' ></box-icon></a>
+     <a class="acc" href="#"><box-icon id="ghanta" name='bell-ring' type='solid' animation='tada'></box-icon></a>
      <a class="acc" onclick="openModal()"><i class="fa-solid fa-circle-user"></i></a>
 
  </div>
