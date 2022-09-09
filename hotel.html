@@ -15,16 +15,16 @@
    
     <link rel="stylesheet" href="./styles/search.css">
     <link rel="stylesheet" href="./styles/navbar.css">
-    
-   
-    <script defer src="./scripts/index.js" type="module"></script>
-    
-    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <link
     rel="icon"
     href="https://www.expedia.com/favicon.ico"
     type="logo.svg"
   />
+    
+   
+    <script defer src="./scripts/index.js" type="module"></script>
+    <script defer src="./scripts/index.js" type="module"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
   
 
     <script src="https://kit.fontawesome.com/e488acc005.js" crossorigin="anonymous"></script>
@@ -48,19 +48,20 @@
        
         <div id="append-input">
             <div id="input-heading">
-            <h1 id="page-title">Search Flights</h1>
+            <h1 id="page-title">Search Stays</h1>
             <div class="input_boxes">
                 
-                <input id="from" class="fbutton1" type="text" placeholder="Leaving From"></input>
+                <input id="from" class="fbutton1" type="text" placeholder="Going To"></input>
     
                <i id="exchange-logo" class="fa-solid fa-exchange"></i>
     
               
-                <input id="to" class="fbutton2" type="text" placeholder="Going To"></input>
+                <input id="to" class="fbutton2" onfocus="(this.type='date')" onblur="(this.type='text')"
+                value="Check-in"></input>
     
                
                 <input class="fbutton3" onfocus="(this.type='date')" onblur="(this.type='text')"
-                    value="2022-08-09"></input>
+                    value="Check-out"></input>
     
             </div>
             <button id="searchFlights">Search</button>
@@ -72,11 +73,13 @@
         <!-- ***************************************************************** -->
 
         <!-- Mid-Section START! -->
-        
+        <h1></h1>
         <div id="bg-img-container">
             <div id="bg-img">
 
-                <div id="bg-color">
+                <div class="1img">
+                    <img src="https://images.unsplash.com/photo-1544945582-3b466d874eac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="">
+                </div>
                     <div id="text-content">
                         <h1>Save instantly with Expedia Rewards</h1>
                         <p>You can enjoy access to perks like Member Prices, saving you 10% or more on select hotels.
@@ -98,7 +101,7 @@
 
             <div id="Qr-cont">
                 <div id="img-cont"><img
-                        src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg"
+                        src="https://a.travel-assets.com/travel-assets-manager/8b9c5cbf-f527-49fb-b881-8d7037952a89/assurance_4_562x240-2x.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh"
                         alt=""></div>
                 <div id="text-contQr">
                     <h1>Our app takes you further</h1>
@@ -317,14 +320,14 @@
 
 
 <script>
-//     document.querySelector("#sty").addEventListener("click",function(){
+    document.querySelector("#sty").addEventListener("click",function(){
 
-//     window.location.href="./index.html"
+    window.location.href="./index.html"
 
    
   
 
-// })
+})
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName('dropdown-content');
@@ -346,9 +349,3 @@ function myFunction() {
 
 </script>
 <script src="./scripts/search.js"></script>
-
-
-
-
-
-

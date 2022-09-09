@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  #page-title {
+    margin-bottom: 20px;
+  }
+  #border-div {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  #return-link:focus {
+    background-color: #3662d8;
+  }
+  
+  .select_button {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px;
+    font-family: 'Centra No2', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .select_button > div {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .select_button > div:first-child > div {
+    padding: 12px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .select_button > div:first-child > div > a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .select_button > div:first-child > div:first-child {
+    background-color: #e0e7f7;
+  }
+  
+  .select_button > div:first-child > div:first-child > a {
+    text-decoration: none;
+    color: #3662d8;
+  }
+  
+  .select_button > div:first-child > div:hover {
+    background-color: #e0e7f7;
+  }
+  
+  .select_button > div:first-child > div > a:hover {
+    color: #3662d8;
+  }
+  
+  .select_button > div:last-child > div {
+    padding: 12px 15px;
+    cursor: pointer;
+    color: #3662d8;
+  }
+  
+  .select_button > div:last-child > div > h4 {
+    font-weight: 500;
+  }
+  
+  .select_button > div:last-child > div > h4:hover {
+    text-decoration: underline;
+  }
+  
+  /* ------------------------flights input part--------------------------- */
+  
+  .input_button {
+    /* border: 1px solid black;  */
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    position: relative;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  #location1 {
+    position: absolute;
+    left: 0.5%;
+    top: 10px;
+    /* font-size: 13px; */
+    /* padding: 1.6px; */
+    display: flex;
+    align-items: center;
+    color: rgb(32, 30, 30);
+  }
+  
+  #location2 {
+    position: absolute;
+    left: 35.5%;
+    top: 10px;
+    /* font-size: 13px; */
+    /* padding: 1.6px; */
+    display: flex;
+    align-items: center;
+    color: rgb(32, 30, 30);
+  }
+  
+  #exchange {
+    align-self: center;
+  
+    color: rgb(62, 62, 62);
+    cursor: pointer;
+  }
+  #departing {
+    position: absolute;
+    left: 69%;
+    top: 10px;
+    /* font-size: 13px; */
+    /* padding: 1.6px; */
+    display: flex;
+    align-items: center;
+    color: rgb(32, 30, 30);
+  }
+  #first-img>img{
+    background-image: url('https://images.unsplash.com/photo-1544945582-3b466d874eac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80');
+  }
+  
+  #returning {
+    position: absolute;
+    left: 84%;
+    top: 10px;
+  }
+  
+  .input_button > .fbutton1 {
+    padding: 10.2px 21px;
+  
+    border: 1.5px solid #727483;
+    border-radius: 8px;
+  }
+  
+  .input_button > .fbutton2 {
+    padding: 10.2px 21px;
+  
+    border: 1.5px solid #727483;
+    border-radius: 8px;
+  }
+  
+  .input_button > .fbutton3 {
+    padding: 10.2px 21px;
+  
+    border: 1.5px solid #727483;
+    border-radius: 8px;
+  }
+  
+  .input_button > .fbutton4 {
+    padding: 10.2px 21px;
+    width: 9.5%;
+    border: 1.5px solid #727483;
+    border-radius: 8px;
+  }
+  
+  #searchFlights {
+    display: block;
+  
+    padding: 14px 60px;
+    margin-top: 40px;
+    background-color: #3662d8;
+    border-radius: 7px;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-family: 'Centra No2', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #srcBtn:hover {
+    cursor: pointer;
+    background-color: #1f419c;
+  }
+  .down_btns > select,
+  .down_btns > input,
+  .down_btns > button {
+    height: 45px;
+    width: 140px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid black;
+  
+    font-size: 15px;
+  }
+  .down_btns > input {
+    height: 43px;
+    padding-left: 10px;
+  }
+  .down_btns > button {
+    background-color: rgb(73, 73, 238);
+    color: white;
+    font-weight: 600;
+    border: none;
+  }
+  #input-heading {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .input_boxes {
+    display: flex;
+    width: 100%;
+  
+    gap: 10px;
+  }
+  .input_boxes > input {
+    margin: 0;
+    width: 30vw;
+    padding: 18px;
+    outline: none;
+    border: 1.5px solid #727483;
+    border-radius: 8px;
+  }
+  #exchange-logo {
+    align-self: center;
+    cursor: pointer;
+  }
+  #exchange-logo:hover {
+    color: #3662d8;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .input_boxes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+  
+      gap: 10px;
+    }
+    .input_boxes > input {
+      width: 100%;
+    }
+  }
+  
