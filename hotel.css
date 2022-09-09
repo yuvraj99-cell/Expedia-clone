@@ -125,6 +125,9 @@
     align-items: center;
     color: rgb(32, 30, 30);
   }
+  #first-img>img{
+    background-image: url('https://images.unsplash.com/photo-1544945582-3b466d874eac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80');
+  }
   
   #returning {
     position: absolute;
