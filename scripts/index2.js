@@ -24,12 +24,12 @@ function goToStays() {
 function goToFlights() {
   let div = `<div class="input_button">
       
-      <input class="fbutton1" type="text" placeholder="Leaving From"></input>
+      <input id="from" class="fbutton1" type="text" placeholder="Leaving From"></input>
 
      <i id="exchange" class="fa-solid fa-exchange"></i>
 
     
-      <input class="fbutton2" type="text" placeholder="Going To"></input>
+      <input id="to" class="fbutton2" type="text" placeholder="Going To"></input>
 
      
       <input type="date" value="2022-08-12" class="fbutton3" onfocus="(this.type='date')" onblur="(this.type='text')"
@@ -40,6 +40,10 @@ function goToFlights() {
 
   document.getElementById('change-page').innerHTML = div;
   document.getElementById('srcBtn').addEventListener('click', () => {
+    let from = document.getElementById('from').value;
+    let to = document.getElementById('to').value;
+    localStorage.setItem('from', from);
+    localStorage.setItem('to', to);
     window.location.href = './flights.html';
   });
 }

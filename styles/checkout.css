@@ -1,9 +1,8 @@
-
 body {
   font-family: Arial;
   font-size: 17px;
   padding: 8px;
-  background-image: url('https://images.theconversation.com/files/428796/original/file-20211027-14984-ps78if.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip');
+
   background-repeat: no-repeat;
 
   background-size: 100% 120%;
@@ -51,10 +50,9 @@ body {
   margin: auto;
   opacity: 0.9;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  
 }
 
-input[type=text] {
+input[type='text'] {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
@@ -74,7 +72,7 @@ label {
 }
 
 .btn {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 12px;
   margin: 10px 0;
@@ -90,7 +88,7 @@ label {
 }
 
 a {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 hr {

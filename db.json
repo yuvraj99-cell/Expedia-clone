@@ -175,6 +175,61 @@
       "airlines": "Go First",
       "duration": 2.1,
       "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/G8_sq.svg"
+    },
+    {
+      "id": "17",
+      "from": "Delhi",
+      "to": "Mumbai",
+      "date": "Sep 15, 2021",
+      "time": "6:19 PM",
+      "price": 11825,
+      "airlines": "Go First",
+      "duration": 2.1,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/G8_sq.svg"
+    },
+    {
+      "id": "18",
+      "from": "Delhi",
+      "to": "Mumbai",
+      "date": "Sep 14, 2021",
+      "time": "1:27 PM",
+      "price": 8545,
+      "airlines": "Vistara",
+      "duration": 1.9,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/UK_sq.svg"
+    },
+    {
+      "id": "19",
+      "from": "Delhi",
+      "to": "Mumbai",
+      "date": "Sep 14, 2021",
+      "time": "1:10 PM",
+      "price": 8484,
+      "airlines": "Spice Jet",
+      "duration": 3,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/SG_sq.svg"
+    },
+    {
+      "id": "19",
+      "from": "Delhi",
+      "to": "Mumbai",
+      "date": "Sep 14, 2021",
+      "time": "2:09 PM",
+      "price": 8239,
+      "airlines": "Go First",
+      "duration": 2.4,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/G8_sq.svg"
+    },
+    {
+      "id": "20",
+      "from": "Delhi",
+      "to": "Mumbai",
+      "date": "Sep 14, 2021",
+      "time": "9:53 PM",
+      "price": 8947,
+      "airlines": "Indigo",
+      "duration": 2.8,
+      "logoURL": "https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/6E_sq.svg"
     }
   ],
   "cities": [

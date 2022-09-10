@@ -1,14 +1,25 @@
-document.querySelector('#searchFlights').addEventListener('click', getFlights);
+let c = localStorage.getItem('from') || null;
+let d = localStorage.getItem('to') || null;
+if (c != null && d != null) {
+  getFlights(c, d);
+  localStorage.removeItem("from");
+  localStorage.removeItem("to");
+  document.getElementById('from').value = c;
+  document.getElementById('to').value = d;
+}
+document.querySelector('#searchFlights').addEventListener('click', function () {
+  let from = document.getElementById('from').value;
+  let to = document.getElementById('to').value;
+  getFlights(from, to);
+});
 let arr = [];
 let globalArr = [];
-async function getFlights(event) {
+async function getFlights(from, to) {
   document.getElementById('mainContent').style.display = 'flex';
   document.getElementById('bg-img-container2').style.display = 'none';
   document.getElementById('bg-img-container').style.display = 'none';
-  event.preventDefault();
+  // event.preventDefault();
 
-  let from = document.getElementById('from').value;
-  let to = document.getElementById('to').value;
   try {
     document.getElementById(
       'appendHere'

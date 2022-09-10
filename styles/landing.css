@@ -597,5 +597,9 @@ h3 {
     display: none;
   }
 }
+.down_btns + p {
+  font-size: 12px;
+  margin-top: 10px;
+}
 
 /*   LAST SECTION END! */
