@@ -27,7 +27,7 @@ async function getFlights(from, to) {
   try {
     document.getElementById(
       'appendHere'
-    ).innerHTML = `<img id="waiting-img"  src="https://image.shutterstock.com/image-vector/airplane-icon-white-on-light-260nw-691819741.jpg">`;
+    ).innerHTML = `<img id="waiting-img"  src="https://cdn.dribbble.com/users/72535/screenshots/4291412/tripactions-flight-search-loader-by-jardson-almeida.gif">`;
 
     const res = await fetch(
       `http://localhost:3000/flights?from=${from}&to=${to}`
@@ -47,7 +47,7 @@ async function getFlights(from, to) {
 
     setTimeout(() => {
       displayFlights(res2);
-    }, 1500);
+    }, 3000);
   } catch (err) {
     document.getElementById(
       'appendHere'

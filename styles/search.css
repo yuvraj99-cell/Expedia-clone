@@ -187,6 +187,8 @@ input {
 #waiting-img {
   display: block;
   margin: auto;
+  width: 50vw;
+
   margin-top: 50px;
 }
 #selectBtn {
