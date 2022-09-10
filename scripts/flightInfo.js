@@ -104,5 +104,9 @@ function append(ele) {
     <button id="checkoutBtn">Check Out</button>
   </div>
 </div>`;
+
   document.getElementById('info').innerHTML = div;
+  document.getElementById('checkoutBtn').addEventListener('click', function () {
+    window.location.href = '../checkout.html';
+  });
 }

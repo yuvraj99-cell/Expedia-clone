@@ -42,6 +42,10 @@ function goToFlights() {
   document.getElementById('srcBtn').addEventListener('click', () => {
     let from = document.getElementById('from').value;
     let to = document.getElementById('to').value;
+    if (from == '' || to == '') {
+      alert('Empty Input');
+      return;
+    }
     localStorage.setItem('from', from);
     localStorage.setItem('to', to);
     window.location.href = './flights.html';

@@ -2,14 +2,18 @@ let c = localStorage.getItem('from') || null;
 let d = localStorage.getItem('to') || null;
 if (c != null && d != null) {
   getFlights(c, d);
-  localStorage.removeItem("from");
-  localStorage.removeItem("to");
+  localStorage.removeItem('from');
+  localStorage.removeItem('to');
   document.getElementById('from').value = c;
   document.getElementById('to').value = d;
 }
 document.querySelector('#searchFlights').addEventListener('click', function () {
   let from = document.getElementById('from').value;
   let to = document.getElementById('to').value;
+  if (from == '' || to == '') {
+    alert('Empty Input');
+    return;
+  }
   getFlights(from, to);
 });
 let arr = [];
@@ -45,6 +49,9 @@ async function getFlights(from, to) {
       displayFlights(res2);
     }, 1500);
   } catch (err) {
+    document.getElementById(
+      'appendHere'
+    ).innerHTML = `<img id="waiting-img"  src="https://www.sotc.in/images/flight/noResultFound.jpg">`;
     console.log(err, 'aasd');
   }
 }

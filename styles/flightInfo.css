@@ -23,6 +23,13 @@
   min-width: 350px;
   width: 800px;
 }
+#flexible > div > p:first-child {
+  font-size: 14px;
+  font-weight: 600;
+}
+#flexible > div > p:nth-child(2) {
+  font-size: 14px;
+}
 #second {
   width: 400px;
   min-width: 350px;
@@ -64,6 +71,7 @@
 }
 #verySmall {
   font-size: 11px;
+  margin-bottom: 10px;
 }
 #checkoutBtn {
   padding: 10px 30px;
@@ -86,5 +94,17 @@
   padding-top: 50px;
   margin-left: 4vw;
   padding-left: 30px;
-  width: 200px;
+  width: 250px;
+}
+#traveller {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+#flight {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+#taxes {
+  font-size: 13px;
 }

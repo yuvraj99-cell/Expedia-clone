@@ -30,7 +30,7 @@ export const navbar = () => `
 </div>
  </div>
  <div id="right">
-   <div class="acc" id="middle"><i class="fa-solid fa-bars"></i></div>
+   <div  class="acc" id="middle"><i class="fa-solid fa-bars"></i></div>
    
    <div class="desktop-nav">
    <div id="translate"> 
@@ -41,7 +41,7 @@ export const navbar = () => `
      <a href="#">Trips</a>
    </div>
      <div class="static">
-     <a class="acc" href="#"><box-icon id="ghanta" name='bell-ring' type='solid' animation='tada'></box-icon></a>
+     <a class="acc" href="#"><i class="fa-solid fa-bell"></i></a>
      <a class="acc" onclick="openModal()"><i class="fa-solid fa-circle-user"></i></a>
 
  </div>
