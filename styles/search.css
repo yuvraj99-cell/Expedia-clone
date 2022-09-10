@@ -187,6 +187,7 @@ input {
 #waiting-img {
   display: block;
   margin: auto;
+  margin-top: 50px;
 }
 #selectBtn {
   position: relative;

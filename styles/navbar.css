@@ -258,6 +258,7 @@ body {
 .acc {
   font-size: 22px;
   cursor: pointer;
+  text-decoration: none;
 }
 .acc :hover {
   color: rgb(107, 107, 107);
