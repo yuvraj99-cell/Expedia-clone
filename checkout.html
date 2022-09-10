@@ -17,7 +17,7 @@
     <div class="row">
       <div class="col-75">
         <div class="container">
-          <form action="/action_page.php">
+          <form action="./index.html">
             <div class="row">
               <div class="col-50">
                 <h3>Billing Address</h3>
@@ -140,8 +140,6 @@
 <script>
   document.getElementById('final').addEventListener('click', function () {
     alert('Payment Sucessful');
-    setTimeout(() => {
-      window.location.href = './index.html';
-    }, 2000);
+    window.location.href = './index.html';
   });
 </script>
