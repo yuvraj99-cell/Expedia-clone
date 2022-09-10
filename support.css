@@ -1,25 +1,115 @@
 body{
     font-family: "Centra No2", -apple-system, BlinkMacSystemFont, 
                     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: bold;
-    color: #616161;
-    font-size: 1em;
-    line-height: 1.41176471;
+    width: 86%;
+    /* justify-content: center; */
+    margin: auto;
 }
 
 div{
-    border: 1px solid red;
+    border: 1px solid blue;
 }
-#navbar, #search_banner{
-    height: 75px;
+#navbar{
+    height: 70px;
     margin: auto;
     padding: 1px;
 }
 
+#search_banner{
+    height: 80px;
+    margin: auto;
+    padding: 1px;
+   
+    border: 2px solid red;
+    display: flex;
+}
 #site_content{
-    height: 500px;
+    height: 480px;
+    background-color:#ededed;
+    margin: auto;
+}
+#row_col_SC{
+    height: 20px;
+    width: 20%;
+    border: 1px solid rgb(121, 6, 6);
 }
 
+#search-term{
+    height: 52px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px 10px 10px 300px;
+    border: 2px solid navy;
+    border-radius: 1px;
+}
+#position_wrapper>a{
+    color:red;
+    /* text-align: start; */
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: 700;
+    vertical-align: middle;
+    padding: 1px 20px;
+}
+#position_wrapper>input{
+    width: 200px;
+    height: 40px;
+    border: 1px solid gray;
+}
+/* #search_container{
+    height: inherit;
+    width: 500px;
+    border: 10px solid brown;
+    display: flex;
+    flex-direction: column;
+} */
+#drops{
+    height: 250px;
+    width: 200px;
+    /* margin: 10px; */
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#search_container>input{
+    box-sizing: content-box;
+    font-size: 16px;
+    line-height: 2em;
+    display: flex;
+    width: auto;
+}
 #footer{
     height: 500px;
+}
+#drops>a{
+    text-decoration: none;
+    font-size: 10;
+    font-weight: 400;
+    color: #0065b8;
+    vertical-align: top;
+    line-height: 1.45em;
+    list-style: none;
+}
+#add_your_property>a{
+    text-decoration: none;
+    font-size: 10;
+    font-weight: bold;
+    color: #0065b8;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 8px 40px;
+    margin: auto;
+}
+#footer{
+    margin-top: 19px;
+}
+#container_banner{
+    border: 2px solid blue;
+    border: 7px;
+
+}
+.top_img{
+    background-image: url("https://a.travel-assets.com/mad-service/header/banner/expedia_refresh_logo_102.png");
 }
